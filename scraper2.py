@@ -1,5 +1,8 @@
 from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
 
 # User info
 EMAIL = "lainey.chylik@gmail.com"
@@ -45,6 +48,16 @@ links = []
 assets = br.find_elements(By.CLASS_NAME, '_161YN')
 for asset in assets:
 	br.execute_script('arguments[0].scrollIntoView();', asset)
+	
+	# ADDED SO SCRAPER WORKS ON MAC
+	# Slows scraper down so one element does not obsure another
+	timeout = 5
+	try:
+		present = EC.presence_of_element_located((By.CLASS_NAME, 'asset'))
+		WebDriverWait(br, timeout).until(present)
+	except TimeoutException:
+		print('TIMEOUT')
+
 	try:
 		asset.click()
 	except:
