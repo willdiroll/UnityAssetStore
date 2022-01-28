@@ -9,7 +9,7 @@ HOW TO RUN:
  - Terminal should provide a link that looks like an IP address where the webpage is being hosted.
 
 HOW TO NAVIGATE:
- - Home Page: No Path
+ - Home Page: '/home' Path
  - Join Page: '/join' Path
  - Create Page: '/create' Path
  - Asset Info Page: '/asset_info' Path
