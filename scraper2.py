@@ -9,9 +9,9 @@ PASSWORD = "Password22"
 
 # Set up a headless Firefox browser
 op = webdriver.FirefoxOptions()	# Must download the Firefox geckodriver from
-								# https://github.com/mozilla/geckodriver/releases
-								# Then, move geckodriver into a $PATH directory
-								#			e.g. usr/local/bin
+					# https://github.com/mozilla/geckodriver/releases
+					# Then, move geckodriver into a $PATH directory
+					#			e.g. usr/local/bin
 op.headless = False		# Can change this to True to avoid opening FireFox window
 br = webdriver.Firefox(options = op)
 wait = WebDriverWait(br, 2)
