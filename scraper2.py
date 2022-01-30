@@ -1,5 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 # User info
 EMAIL = "lainey.chylik@gmail.com"
@@ -12,9 +14,11 @@ op = webdriver.FirefoxOptions()	# Must download the Firefox geckodriver from
 								#			e.g. usr/local/bin
 op.headless = False		# Can change this to True to avoid opening FireFox window
 br = webdriver.Firefox(options = op)
+wait = WebDriverWait(br, 2)
 
 # Navigate to the unity Asset Store login page
 URL = 'https://assetstore.unity.com/account/assets'
+br.implicitly_wait(5)
 br.get(URL)
 
 # Locate the login fields
@@ -45,11 +49,8 @@ links = []
 assets = br.find_elements(By.CLASS_NAME, '_161YN')
 for asset in assets:
 	br.execute_script('arguments[0].scrollIntoView();', asset)
-	try:
-		asset.click()
-	except:
-		br.implicitly_wait(5)
-		asset.click()
+
+	wait.until(EC.element_to_be_clickable(asset)).click()
 	links.append(br.find_element(By.CLASS_NAME, '_3UE3J.ZQFsR.auto._2RWe1').get_attribute('href'))
 	br.find_element(By.CLASS_NAME, '_1VOoF').click()
 
