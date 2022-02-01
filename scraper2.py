@@ -47,9 +47,11 @@ while has_next_page:
 
 	# Loop thru assets on the current page
 	assets = br.find_elements(By.CLASS_NAME, '_161YN')
+	# Scroll to top of the page to begin execution 
+	br.execute_script("window.scrollTo(0, 0);")
 	for asset in assets:
 		br.execute_script('arguments[0].scrollIntoView();', asset)
-
+		time.sleep(1)
 		wait.until(EC.element_to_be_clickable(asset)).click()
 		links.append(br.find_element(By.CLASS_NAME, '_3UE3J.ZQFsR.auto._2RWe1').get_attribute('href'))
 		br.find_element(By.CLASS_NAME, '_1VOoF').click()
