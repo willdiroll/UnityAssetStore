@@ -1118,3 +1118,358 @@ JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1643739778900	geckodriver	INFO	Listening on 127.0.0.1:53193
+1643739779485	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53194" "-foreground" "-no-remote" "-profile" "/var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofilelZLiK4"
+1643739780058	Marionette	INFO	Marionette enabled
+2022-02-01 13:23:00.829 firefox-bin[35694:2261385] Warning: Expected min height of view: (<NSButton: 0x123605000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:23:00.830 firefox-bin[35694:2261385] Warning: Expected min height of view: (<NSButton: 0x10de7c400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:23:00.831 firefox-bin[35694:2261385] Warning: Expected min height of view: (<NSButton: 0x1237af000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:23:00.832 firefox-bin[35694:2261385] Warning: Expected min height of view: (<NSButton: 0x1237b2c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:23:00.832 firefox-bin[35694:2261385] Warning: Expected min height of view: (<NSButton: 0x1237af800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:23:00.833 firefox-bin[35694:2261385] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x1237b6800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:23:00.833 firefox-bin[35694:2261385] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x11ce05800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofilelZLiK4/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:53194/devtools/browser/c04cf725-33a6-4ade-b5b7-149dfdfb083b
+1643739782082	Marionette	INFO	Listening on port 53203
+1643739782181	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: r is undefined
+1643739784853	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 35700, MediaDecoderStateMachine #1] WARNING: 111714900 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1643740026772	geckodriver	INFO	Listening on 127.0.0.1:54359
+1643740027289	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "54360" "-foreground" "-no-remote" "-profile" "/var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofileSJttDu"
+1643740027768	Marionette	INFO	Marionette enabled
+2022-02-01 13:27:08.411 firefox-bin[35751:2264125] Warning: Expected min height of view: (<NSButton: 0x11e1bf400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:27:08.412 firefox-bin[35751:2264125] Warning: Expected min height of view: (<NSButton: 0x12c530800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:27:08.413 firefox-bin[35751:2264125] Warning: Expected min height of view: (<NSButton: 0x12c530c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:27:08.414 firefox-bin[35751:2264125] Warning: Expected min height of view: (<NSButton: 0x12c531400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:27:08.414 firefox-bin[35751:2264125] Warning: Expected min height of view: (<NSButton: 0x12c52a800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:27:08.415 firefox-bin[35751:2264125] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x12c52b800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:27:08.416 firefox-bin[35751:2264125] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x11c49a800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofileSJttDu/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:54360/devtools/browser/26bc9f36-0c57-4bfb-a9b0-439eb2e8fa42
+1643740029690	Marionette	INFO	Listening on port 54365
+1643740029732	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1643740032393	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 35754, MediaDecoderStateMachine #1] WARNING: 117c2c800 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1643740059594	geckodriver	INFO	Listening on 127.0.0.1:54626
+1643740059625	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "54627" "-foreground" "-no-remote" "-profile" "/var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofilefO0qyW"
+1643740060124	Marionette	INFO	Marionette enabled
+2022-02-01 13:27:40.897 firefox-bin[35783:2264950] Warning: Expected min height of view: (<NSButton: 0x1196be800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:27:40.898 firefox-bin[35783:2264950] Warning: Expected min height of view: (<NSButton: 0x12030e400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:27:40.899 firefox-bin[35783:2264950] Warning: Expected min height of view: (<NSButton: 0x12030d400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:27:40.900 firefox-bin[35783:2264950] Warning: Expected min height of view: (<NSButton: 0x12030fc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:27:40.900 firefox-bin[35783:2264950] Warning: Expected min height of view: (<NSButton: 0x120312400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:27:40.901 firefox-bin[35783:2264950] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x120310c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:27:40.901 firefox-bin[35783:2264950] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x1185d2800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofilefO0qyW/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:54627/devtools/browser/e74729dc-8b78-4c5b-aed9-7f7ca8edcb42
+1643740062206	Marionette	INFO	Listening on port 54630
+1643740062332	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: r is undefined
+1643740064745	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 35787, MediaDecoderStateMachine #1] WARNING: 12eeba300 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 35787, MediaDecoderStateMachine #1] WARNING: 12f60e900 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WebGL context was lost.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 35787, MediaDecoderStateMachine #1] WARNING: 12e986a00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WebGL context was lost.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+[Child 35787, MediaDecoderStateMachine #1] WARNING: 12f739400 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 35787, MediaDecoderStateMachine #1] WARNING: 12f070300 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 35787, MediaDecoderStateMachine #1] WARNING: 12e45c900 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 35787, MediaDecoderStateMachine #1] WARNING: 12e442100 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643740153237	geckodriver	INFO	Listening on 127.0.0.1:55180
+1643740153752	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "55181" "-foreground" "-no-remote" "-profile" "/var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofilep8bAq1"
+1643740154280	Marionette	INFO	Marionette enabled
+2022-02-01 13:29:15.035 firefox-bin[35831:2266606] Warning: Expected min height of view: (<NSButton: 0x11f0c1000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:29:15.035 firefox-bin[35831:2266606] Warning: Expected min height of view: (<NSButton: 0x125c55000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:29:15.036 firefox-bin[35831:2266606] Warning: Expected min height of view: (<NSButton: 0x125c50000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:29:15.037 firefox-bin[35831:2266606] Warning: Expected min height of view: (<NSButton: 0x125c51c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:29:15.037 firefox-bin[35831:2266606] Warning: Expected min height of view: (<NSButton: 0x125c52c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:29:15.038 firefox-bin[35831:2266606] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x125c55c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:29:15.038 firefox-bin[35831:2266606] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x11db49800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofilep8bAq1/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:55181/devtools/browser/33a55cbf-5199-4cc9-b453-c047b274e9a5
+1643740156170	Marionette	INFO	Listening on port 55186
+1643740156239	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1643740160205	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 35835, MediaDecoderStateMachine #1] WARNING: 11482a700 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 35835, MediaDecoderStateMachine #1] WARNING: 12bdd4600 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1643740224274	geckodriver	INFO	Listening on 127.0.0.1:55681
+1643740224285	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "55682" "-foreground" "-no-remote" "-profile" "/var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofilecp99C5"
+1643740224761	Marionette	INFO	Marionette enabled
+2022-02-01 13:30:30.165 firefox-bin[35861:2268684] Warning: Expected min height of view: (<NSButton: 0x11c125400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:30:30.166 firefox-bin[35861:2268684] Warning: Expected min height of view: (<NSButton: 0x122231400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:30:30.167 firefox-bin[35861:2268684] Warning: Expected min height of view: (<NSButton: 0x122235800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:30:30.168 firefox-bin[35861:2268684] Warning: Expected min height of view: (<NSButton: 0x122230800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:30:30.168 firefox-bin[35861:2268684] Warning: Expected min height of view: (<NSButton: 0x122237000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:30:30.169 firefox-bin[35861:2268684] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x122231800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 13:30:30.170 firefox-bin[35861:2268684] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x11b1efc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofilecp99C5/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:55682/devtools/browser/201f4420-63c4-47a1-a9bf-471e0d0984e5
+1643740231397	Marionette	INFO	Listening on port 55685
+1643740231422	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: r is undefined
+1643740234012	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 35866, MediaDecoderStateMachine #1] WARNING: 123dbfc00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 35866, MediaDecoderStateMachine #1] WARNING: 123dbfc00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 35866, MediaDecoderStateMachine #1] WARNING: 123be9600 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1643761721882	Marionette	INFO	Stopped listening on port 65174
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1643761725010	Marionette	INFO	Stopped listening on port 53203
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1643761727624	Marionette	INFO	Stopped listening on port 54365
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643761730997	Marionette	INFO	Stopped listening on port 54630
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1643761733962	Marionette	INFO	Stopped listening on port 55186
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1643761738388	Marionette	INFO	Stopped listening on port 55685
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1643761742277	geckodriver	INFO	Listening on 127.0.0.1:57970
+1643761742777	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "57971" "-foreground" "-no-remote" "-profile" "/var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofilewyiDb4"
+1643761744171	Marionette	INFO	Marionette enabled
+2022-02-01 19:29:05.257 firefox-bin[36087:2287300] Warning: Expected min height of view: (<NSButton: 0x118033000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 19:29:05.257 firefox-bin[36087:2287300] Warning: Expected min height of view: (<NSButton: 0x118c58400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 19:29:05.258 firefox-bin[36087:2287300] Warning: Expected min height of view: (<NSButton: 0x118c5ac00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 19:29:05.259 firefox-bin[36087:2287300] Warning: Expected min height of view: (<NSButton: 0x118c59400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 19:29:05.259 firefox-bin[36087:2287300] Warning: Expected min height of view: (<NSButton: 0x118c59800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 19:29:05.260 firefox-bin[36087:2287300] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x118c85000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 19:29:05.260 firefox-bin[36087:2287300] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x11161b000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofilewyiDb4/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:57971/devtools/browser/2c2c5a46-e298-474e-8967-2424adf16aa3
+1643761746793	Marionette	INFO	Listening on port 57976
+1643761746821	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1643761750944	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 36089, MediaDecoderStateMachine #1] WARNING: 121c19800 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 36089, MediaDecoderStateMachine #1] WARNING: 121c19800 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 36089, MediaDecoderStateMachine #1] WARNING: 113ecfe00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 36089, MediaDecoderStateMachine #1] WARNING: 114f9b400 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WebGL context was lost.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 36089, MediaDecoderStateMachine #1] WARNING: 1211f4000 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 36089, MediaDecoderStateMachine #1] WARNING: 114362b00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1643761792726	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1643761826069	Marionette	INFO	Stopped listening on port 57976
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1643761828416	geckodriver	INFO	Listening on 127.0.0.1:58219
+1643761828435	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "58220" "-foreground" "-no-remote" "-profile" "/var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofilecQviBq"
+1643761828931	Marionette	INFO	Marionette enabled
+2022-02-01 19:30:29.684 firefox-bin[36130:2288671] Warning: Expected min height of view: (<NSButton: 0x118775400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 19:30:29.684 firefox-bin[36130:2288671] Warning: Expected min height of view: (<NSButton: 0x118988800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 19:30:29.685 firefox-bin[36130:2288671] Warning: Expected min height of view: (<NSButton: 0x118987800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 19:30:29.686 firefox-bin[36130:2288671] Warning: Expected min height of view: (<NSButton: 0x10327c800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 19:30:29.686 firefox-bin[36130:2288671] Warning: Expected min height of view: (<NSButton: 0x118989400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 19:30:29.687 firefox-bin[36130:2288671] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x11898cc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-01 19:30:29.687 firefox-bin[36130:2288671] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x111d06800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofilecQviBq/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:58220/devtools/browser/1b5bedc3-79c4-46b1-a8f4-0df3bad07bb5
+1643761830911	Marionette	INFO	Listening on port 58223
+1643761831024	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1643761835432	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 36133, MediaDecoderStateMachine #1] WARNING: 12cc32300 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 36133, MediaDecoderStateMachine #1] WARNING: 126c8d300 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 36133, MediaDecoderStateMachine #1] WARNING: 126c4f100 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WebGL context was lost.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 36133, MediaDecoderStateMachine #1] WARNING: 126c84200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 36133, MediaDecoderStateMachine #1] WARNING: 12693ba00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WebGL context was lost.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/13ac89c2329de52376d45e92fb6113e8-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+[Child 36133, MediaDecoderStateMachine #1] WARNING: 126939800 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 36133, MediaDecoderStateMachine #1] WARNING: 128cec000 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 36133, MediaDecoderStateMachine #1] WARNING: 126d28a00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 36133, MediaDecoderStateMachine #1] WARNING: 126c84500 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 36133, MediaDecoderStateMachine #1] WARNING: 128ef0f00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 36133, MediaDecoderStateMachine #1] WARNING: 126c85a00 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+1643823432598	geckodriver	INFO	Listening on 127.0.0.1:50159
+1643823433095	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50160" "-foreground" "-no-remote" "-profile" "/var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofilewtWKyx"
+1643823434356	Marionette	INFO	Marionette enabled
+2022-02-02 12:37:15.380 firefox-bin[37222:2401331] Warning: Expected min height of view: (<NSButton: 0x11c312400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 12:37:15.381 firefox-bin[37222:2401331] Warning: Expected min height of view: (<NSButton: 0x122f1b400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 12:37:15.381 firefox-bin[37222:2401331] Warning: Expected min height of view: (<NSButton: 0x122f1d000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 12:37:15.382 firefox-bin[37222:2401331] Warning: Expected min height of view: (<NSButton: 0x122f21400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 12:37:15.383 firefox-bin[37222:2401331] Warning: Expected min height of view: (<NSButton: 0x122f1d400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 12:37:15.383 firefox-bin[37222:2401331] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x122f1dc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 12:37:15.384 firefox-bin[37222:2401331] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x11b9a4800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofilewtWKyx/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:50160/devtools/browser/4f763a47-5dff-453c-bde6-4bd5bf5a55f4
+1643823436910	Marionette	INFO	Listening on port 50165
+1643823436950	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1643823440182	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 37225, MediaDecoderStateMachine #1] WARNING: 126e2c000 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 37225, MediaDecoderStateMachine #1] WARNING: 12791c200 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+[Child 37225, MediaDecoderStateMachine #1] WARNING: 128af7900 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/a3d04e1dfdf1b7178be79af7f6b13952-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/a3d04e1dfdf1b7178be79af7f6b13952-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/a3d04e1dfdf1b7178be79af7f6b13952-v2.js, line 2: WebGL context was lost.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/a3d04e1dfdf1b7178be79af7f6b13952-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 37225, MediaDecoderStateMachine #1] WARNING: 126ecb600 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/a3d04e1dfdf1b7178be79af7f6b13952-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/a3d04e1dfdf1b7178be79af7f6b13952-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/a3d04e1dfdf1b7178be79af7f6b13952-v2.js, line 2: WebGL context was lost.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/a3d04e1dfdf1b7178be79af7f6b13952-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1643824829839	geckodriver	INFO	Listening on 127.0.0.1:50604
+1643824830296	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50605" "-foreground" "-no-remote" "-profile" "/var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofileSXsFPh"
+1643824831041	Marionette	INFO	Marionette enabled
+2022-02-02 13:00:31.777 firefox-bin[37436:2416132] Warning: Expected min height of view: (<NSButton: 0x12a3a6c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:00:31.778 firefox-bin[37436:2416132] Warning: Expected min height of view: (<NSButton: 0x12a3cfc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:00:31.778 firefox-bin[37436:2416132] Warning: Expected min height of view: (<NSButton: 0x12a3cf400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:00:31.779 firefox-bin[37436:2416132] Warning: Expected min height of view: (<NSButton: 0x12a3d6000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:00:31.779 firefox-bin[37436:2416132] Warning: Expected min height of view: (<NSButton: 0x12a3d2400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:00:31.780 firefox-bin[37436:2416132] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x12a3d2800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:00:31.780 firefox-bin[37436:2416132] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x123b0d400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofileSXsFPh/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:50605/devtools/browser/8704a2ad-5173-44a8-8630-9e0059c6f62f
+1643824833060	Marionette	INFO	Listening on port 50610
+1643824833113	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1643824836651	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1643825014507	Marionette	INFO	Stopped listening on port 50610
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643825444845	geckodriver	INFO	Listening on 127.0.0.1:50878
+1643825444855	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50879" "-foreground" "-no-remote" "-profile" "/var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofile6FegvV"
+1643825445372	Marionette	INFO	Marionette enabled
+2022-02-02 13:10:46.090 firefox-bin[37591:2423856] Warning: Expected min height of view: (<NSButton: 0x11eec0000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:10:46.091 firefox-bin[37591:2423856] Warning: Expected min height of view: (<NSButton: 0x11f50b800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:10:46.091 firefox-bin[37591:2423856] Warning: Expected min height of view: (<NSButton: 0x11f512c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:10:46.092 firefox-bin[37591:2423856] Warning: Expected min height of view: (<NSButton: 0x11f50f000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:10:46.092 firefox-bin[37591:2423856] Warning: Expected min height of view: (<NSButton: 0x11f50bc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:10:46.093 firefox-bin[37591:2423856] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x11f50c000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:10:46.094 firefox-bin[37591:2423856] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x11bd3fc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofile6FegvV/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:50879/devtools/browser/0436e8f8-d9bd-4c20-8558-36e28eb65a7a
+1643825447308	Marionette	INFO	Listening on port 50882
+1643825447387	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1643825449930	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1643825625539	Marionette	INFO	Stopped listening on port 50882
+console.error: PushServiceWebSocket: 
+  _beginWSSetup: Not in shutdown state! Current state
+  3
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643825765611	geckodriver	INFO	Listening on 127.0.0.1:51177
+1643825765623	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "51178" "-foreground" "-no-remote" "-profile" "/var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofileCCs4UV"
+1643825766113	Marionette	INFO	Marionette enabled
+2022-02-02 13:16:06.784 firefox-bin[37659:2428048] Warning: Expected min height of view: (<NSButton: 0x127212c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:16:06.785 firefox-bin[37659:2428048] Warning: Expected min height of view: (<NSButton: 0x12de38800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:16:06.785 firefox-bin[37659:2428048] Warning: Expected min height of view: (<NSButton: 0x12de3d800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:16:06.786 firefox-bin[37659:2428048] Warning: Expected min height of view: (<NSButton: 0x12de3ec00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:16:06.786 firefox-bin[37659:2428048] Warning: Expected min height of view: (<NSButton: 0x12de3f400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:16:06.787 firefox-bin[37659:2428048] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x12de3e000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-02 13:16:06.788 firefox-bin[37659:2428048] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x1261b5800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofileCCs4UV/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:51178/devtools/browser/90a98dda-5acc-4edf-8eb4-c27e94de5a3f
+1643825768028	Marionette	INFO	Listening on port 51181
+1643825768058	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: r is undefined
+1643825772480	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/a3d04e1dfdf1b7178be79af7f6b13952-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1643825788928	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/a3d04e1dfdf1b7178be79af7f6b13952-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/a3d04e1dfdf1b7178be79af7f6b13952-v2.js, line 2: WebGL context was lost.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/a3d04e1dfdf1b7178be79af7f6b13952-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: drawArraysInstanced: Tex image TEXTURE_2D level 0 is incurring lazy initialization.

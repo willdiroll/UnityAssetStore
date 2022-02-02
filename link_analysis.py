@@ -25,9 +25,9 @@ links = ['https://assetstore.unity.com/packages/2d/characters/hero-nad-opponents
 'https://assetstore.unity.com/packages/vfx/particles/fire-explosions/procedural-fire-141496']
 
 def get_link_info(link):
-    # removes the part of link that is uniform throughout
+    # Removes the part of link that is uniform throughout
     trimmed_link = link[38:]
-    # puts all of the categories at beginning of info array
+    # Puts all of the categories at beginning of info array
     info = trimmed_link.split('/')
     title_id = info[len(info) - 1]
     info.remove(title_id)
@@ -37,12 +37,14 @@ def get_link_info(link):
     info.append(id)
     title_id.remove(id)
     title = " ".join(title_id)
-    # title added to info[len(info) - 1]
+    # Title added to info[len(info) - 1]
     info.append(title)
     return info
 
 # prints each link with its corresponding info array
 for link in links:
     print(link)
-    print(get_link_info(link))
+    info = get_link_info(link)
+    categories = info[:len(info) - 2]
+    print("Title: "+info[len(info) - 1]+ ", Asset ID: "+info[len(info) -2]+ ", Categories: "+ ', '.join(map(str, categories)))
 

@@ -1,9 +1,28 @@
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 import time
+
+# A function that breaks down the given link to access the asset's title, ID, and corresponding categories
+def get_link_info(link):
+    # Removes the part of link that is uniform throughout
+    trimmed_link = link[38:]
+    # Puts all of the categories at beginning of info array
+    info = trimmed_link.split('/')
+    title_id = info[len(info) - 1]
+    info.remove(title_id)
+    title_id = title_id.split('-')
+    id = title_id[len(title_id) - 1]
+    # ID added to info[len(info) - 2]
+    info.append(id)
+    title_id.remove(id)
+    title = " ".join(title_id)
+    # Title added to info[len(info) - 1]
+    info.append(title)
+    return info
 
 # User info
 EMAIL = "lainey.chylik@gmail.com"
@@ -53,6 +72,13 @@ while has_next_page:
 		br.execute_script('arguments[0].scrollIntoView();', asset)
 		time.sleep(1)
 		wait.until(EC.element_to_be_clickable(asset)).click()
+		
+		"""" label testing, prints all of the labels present on the page
+		labels = br.find_elements(By.CLASS_NAME, 'le_6J')
+		for label in labels:
+			print(label.text)
+		"""
+		
 		links.append(br.find_element(By.CLASS_NAME, '_3UE3J.ZQFsR.auto._2RWe1').get_attribute('href'))
 		br.find_element(By.CLASS_NAME, '_1VOoF').click()
 
@@ -67,9 +93,12 @@ while has_next_page:
 # Close the browser
 br.quit()
 
-# Print list of links
+# Print list of links and their corresponding information
 for link in links:
 	print(link)
+	info = get_link_info(link)
+	categories = info[:len(info) - 2]
+	print("Title: "+info[len(info) - 1]+ ", Asset ID: "+info[len(info) -2]+ ", Categories: "+ ', '.join(map(str, categories)))
 
 print(len(links))
 
