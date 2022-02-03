@@ -25,8 +25,8 @@ def get_link_info(link):
     return info
 
 # User info
-EMAIL = "lainey.chylik@gmail.com"
-PASSWORD = "Password22"
+EMAIL = 'lainey.chylik@gmail.com'
+PASSWORD = 'Password22'
 
 # Set up a headless Firefox browser
 op = webdriver.FirefoxOptions()	# Must download the Firefox geckodriver from
@@ -61,25 +61,46 @@ time.sleep(2)
 
 # Loop thru Asset pages
 has_next_page = True
-links = []
+assets = []
 while has_next_page:
 
-	# Loop thru assets on the current page
-	assets = br.find_elements(By.CLASS_NAME, '_161YN')
+	# Find all asset div containers on the page
+	asset_divs = br.find_elements(By.CLASS_NAME, '_1QlFG')
+
 	# Scroll to top of the page to begin execution 
-	br.execute_script("window.scrollTo(0, 0);")
-	for asset in assets:
+	br.execute_script('window.scrollTo(0, 0);')
+
+	# Loop thru all asset div containers
+	for asset_div in asset_divs:
+
+		# Asset title
+		asset = asset_div.find_element(By.CLASS_NAME, '_161YN')
+
+		# Click on the asset to open window
 		br.execute_script('arguments[0].scrollIntoView();', asset)
 		time.sleep(1)
 		wait.until(EC.element_to_be_clickable(asset)).click()
 		
-		"""" label testing, prints all of the labels present on the page
-		labels = br.find_elements(By.CLASS_NAME, 'le_6J')
-		for label in labels:
-			print(label.text)
-		"""
-		
-		links.append(br.find_element(By.CLASS_NAME, '_3UE3J.ZQFsR.auto._2RWe1').get_attribute('href'))
+		# Get asset info
+		link = br.find_element(By.CLASS_NAME, '_3UE3J.ZQFsR.auto._2RWe1').get_attribute('href')
+		version_info = asset_div.find_element(By.CLASS_NAME, '_4ROtP').text
+		last_updated = version_info.split(' • ')[0].replace('Last updated: ', '')
+		version_num = version_info.split(' • ')[1].replace('Version: ', '')
+		info = get_link_info(link)
+		title = asset.text
+		asset_id = info[len(info) - 2]
+		categories = info[:len(info) - 2]
+
+		# Compile asset info
+		assets.append( { 
+			'title' : title, 
+			'id' : asset_id,
+			'categories' : categories,
+			'link' : link,
+			'version' : version_num,
+			'last updated' : last_updated } ) 
+
+		# Close asset window
 		br.find_element(By.CLASS_NAME, '_1VOoF').click()
 
 	# Check for next page
@@ -93,13 +114,10 @@ while has_next_page:
 # Close the browser
 br.quit()
 
-# Print list of links and their corresponding information
-for link in links:
-	print(link)
-	info = get_link_info(link)
-	categories = info[:len(info) - 2]
-	print("Title: "+info[len(info) - 1]+ ", Asset ID: "+info[len(info) -2]+ ", Categories: "+ ', '.join(map(str, categories)))
+# Print list of assets and corresponding data
+for asset in assets:
+	print(asset)
 
-print(len(links))
+print(len(assets))
 
 
