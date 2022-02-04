@@ -68,6 +68,16 @@ while has_next_page:
 	assets = br.find_elements(By.CLASS_NAME, '_161YN')
 	# Scroll to top of the page to begin execution 
 	br.execute_script("window.scrollTo(0, 0);")
+
+	asset_blocks = br.find_elements(By.CLASS_NAME, '_1QlFG')
+	for blocks in asset_blocks:
+		names = blocks.find_elements(By.CLASS_NAME, '_161YN._30Ec_')
+		for name in names:
+			print(name.text)
+		elements = blocks.find_elements(By.CLASS_NAME, 'le_6J')
+		for element in elements:
+			print(element.text)
+	
 	for asset in assets:
 		br.execute_script('arguments[0].scrollIntoView();', asset)
 		time.sleep(1)
@@ -78,8 +88,11 @@ while has_next_page:
 		for label in labels:
 			print(label.text)
 		"""
-		
+
 		links.append(br.find_element(By.CLASS_NAME, '_3UE3J.ZQFsR.auto._2RWe1').get_attribute('href'))
+
+		link = br.find_element(By.CLASS_NAME, '_3UE3J.ZQFsR.auto._2RWe1').get_attribute('href')
+
 		br.find_element(By.CLASS_NAME, '_1VOoF').click()
 
 	# Check for next page
