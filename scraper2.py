@@ -62,6 +62,7 @@ time.sleep(2)
 # Loop thru Asset pages
 has_next_page = True
 links = []
+label_info = []
 while has_next_page:
 
 	# Loop thru assets on the current page
@@ -69,30 +70,30 @@ while has_next_page:
 	# Scroll to top of the page to begin execution 
 	br.execute_script("window.scrollTo(0, 0);")
 
+	# Takes each asset block (block on asset page containing its info) to be analyzes
 	asset_blocks = br.find_elements(By.CLASS_NAME, '_1QlFG')
+	# Loops through each block to find both its name and associated labels
 	for blocks in asset_blocks:
+		# Array containing the asset name and labels
+		asset_info = []
 		names = blocks.find_elements(By.CLASS_NAME, '_161YN._30Ec_')
 		for name in names:
-			print(name.text)
+			asset_info.append(name.text)
 		elements = blocks.find_elements(By.CLASS_NAME, 'le_6J')
 		for element in elements:
-			print(element.text)
+			asset_info.append(element.text)
+		# Appends the asset info into a array that contains all of the assets from the page
+		label_info.append(asset_info)
+
+	# Prints each asset's info (name + labels) present in the 'My Assets' pages
+	for labels in label_info:
+		print(labels)
 	
 	for asset in assets:
 		br.execute_script('arguments[0].scrollIntoView();', asset)
 		time.sleep(1)
 		wait.until(EC.element_to_be_clickable(asset)).click()
-		
-		"""" label testing, prints all of the labels present on the page
-		labels = br.find_elements(By.CLASS_NAME, 'le_6J')
-		for label in labels:
-			print(label.text)
-		"""
-
 		links.append(br.find_element(By.CLASS_NAME, '_3UE3J.ZQFsR.auto._2RWe1').get_attribute('href'))
-
-		link = br.find_element(By.CLASS_NAME, '_3UE3J.ZQFsR.auto._2RWe1').get_attribute('href')
-
 		br.find_element(By.CLASS_NAME, '_1VOoF').click()
 
 	# Check for next page
