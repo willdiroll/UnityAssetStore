@@ -70,11 +70,15 @@ while has_next_page:
 	# Scroll to top of the page to begin execution 
 	br.execute_script('window.scrollTo(0, 0);')
 
+	i = 0
 	# Loop thru all asset div containers
 	for asset_div in asset_divs:
 
 		# Asset title
 		asset = asset_div.find_element(By.CLASS_NAME, '_161YN')
+
+		# Asset labels
+		labels = asset_div.find_elements(By.CLASS_NAME, 'le_6J')
 
 		# Click on the asset to open window
 		br.execute_script('arguments[0].scrollIntoView();', asset)
@@ -90,12 +94,16 @@ while has_next_page:
 		title = asset.text
 		asset_id = info[len(info) - 2]
 		categories = info[:len(info) - 2]
+		label_list = []
+		for label in labels:
+			label_list.append(label.text)
 
 		# Compile asset info
 		assets.append( { 
 			'title' : title, 
 			'id' : asset_id,
 			'categories' : categories,
+			'labels' : label_list,
 			'link' : link,
 			'version' : version_num,
 			'last updated' : last_updated } ) 
@@ -103,9 +111,15 @@ while has_next_page:
 		# Close asset window
 		br.find_element(By.CLASS_NAME, '_1VOoF').click()
 
+		i = i + 1
+		if i == 5:
+			break
+
 	# Check for next page
 	next_page = br.find_element(By.CLASS_NAME, '_3UE3J.auto._3wJlw.F35ws')
 	has_next_page = next_page.is_enabled()
+
+	has_next_page = False
 
 	# Click next page button if it is enabled
 	if has_next_page:
