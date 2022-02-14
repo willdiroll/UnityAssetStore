@@ -19,3 +19,6 @@ class Repo(models.Model):
     Name = models.CharField(max_length=100)
     Identifier = models.CharField(max_length=100)
     AID = models.ForeignKey(Asset, default=None, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.Name
