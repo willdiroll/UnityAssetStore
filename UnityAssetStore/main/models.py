@@ -14,6 +14,9 @@ class Asset(models.Model):
     def __str__(self):
         return self.AssetName
 
+    class Meta:
+        app_label = '.models'
+
 class Repo(models.Model):
     RepoKey = models.IntegerField(primary_key=True)
     Name = models.CharField(max_length=100)
@@ -22,3 +25,6 @@ class Repo(models.Model):
 
     def __str__(self):
         return self.Name
+
+    class Meta:
+        app_label = '.models'
