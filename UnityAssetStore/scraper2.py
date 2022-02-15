@@ -4,20 +4,25 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
-from django.conf import settings
-settings.configure(
-    DATABASE_ENGINE = 'sqlite3',
-    DATABASE_NAME = 'db_name',
-    DATABASE_USER = 'db_user',
-    DATABASE_PASSWORD = 'db_pass',
-    DATABASE_HOST = 'localhost',
-    DATABASE_PORT = '8000',
-    TIME_ZONE = 'America/New_York',
-)
-
+import os
 import django
+os.environ["DJANGO_SETTINGS_MODULE"] = 'UAS.settings'
 django.setup()
+
+#
+#from django.conf import settings
+#settings.configure(
+#    DATABASE_ENGINE = 'sqlite3',
+#    DATABASE_NAME = 'db_name',
+#    DATABASE_USER = 'db_user',
+#    DATABASE_PASSWORD = 'db_pass',
+#    DATABASE_HOST = 'localhost',
+#    DATABASE_PORT = '8000',
+#    TIME_ZONE = 'America/New_York',
+#)
+
+#import django
+#django.setup()
 
 from main.models import *
 
@@ -122,4 +127,4 @@ for link in links:
 
 print(len(links))
 
-print(Asset.objects.all())
+print(Asset.objects.count())
