@@ -10,8 +10,10 @@
         <input type="button" name="leave" id="leave" value="Leave" onclick="location.href = 'http://127.0.0.1:8000/join'" style="float: right;">
 
         <br>
-
-        {{ all_assets }}
+        {% for asset in all_assets %}
+            {{ asset}}
+            <br>
+        {%endfor%}
     </body>
 </html>
 
