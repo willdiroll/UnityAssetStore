@@ -1,6 +1,7 @@
 from distutils.archive_util import make_zipfile
 from django.db import models
 import datetime
+import django
 
 class Repo(models.Model):
     RepoKey = models.IntegerField(primary_key=True)
@@ -14,7 +15,7 @@ class Asset(models.Model):
     AID = models.IntegerField(primary_key=True)
     AssetName = models.CharField(max_length=100)
     AssetLink = models.CharField(max_length=100)
-    LastUpdated = models.DateField(default=datetime.date.today())
+    LastUpdated = models.DateField(default= django.utils.timezone.now)
     VersionNum = models.CharField(max_length=100)
     ImgLink = models.CharField(max_length=100)
     RepoKey = models.ForeignKey(Repo, default=None, on_delete=models.CASCADE)
