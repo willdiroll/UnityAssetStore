@@ -1,9 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Asset, Repo
+from .models import *
 
 def home(response):
-    return render(response, "main/homepage.html", {})
+    all_assets = Asset.objects.all()
+    return render(response, "main/homepage.html", {'all_assets': all_assets})
 
 def join(response):
     return render(response, "main/join.html", {})
