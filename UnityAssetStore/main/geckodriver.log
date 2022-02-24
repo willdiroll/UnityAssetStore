@@ -1,0 +1,32 @@
+1644917347241	geckodriver	INFO	Listening on 127.0.0.1:54371
+1644917347267	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "54372" "-foreground" "-no-remote" "-profile" "/var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofileCAtMCF"
+1644917347857	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofileCAtMCF/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:54372/devtools/browser/3bd2555a-a1de-4058-bb1d-2e8c2f7b4010
+1644917349959	Marionette	INFO	Listening on port 54375
+1644917350053	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644917353645	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+
+###!!! [Child][PContentChild] Error: Send(msgname=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+1644920665392	geckodriver	INFO	Listening on 127.0.0.1:55576
+1644920665407	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "55577" "-foreground" "-no-remote" "-profile" "/var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofileU3RePh"
+1644920665992	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofileU3RePh/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:55577/devtools/browser/2c6a9252-572c-4a42-b5de-3d68b2a297b3
+1644920668455	Marionette	INFO	Listening on port 55580
+1644920668540	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644961916732	Marionette	INFO	Stopped listening on port 54375
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1644961919404	Marionette	INFO	Stopped listening on port 55580
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
