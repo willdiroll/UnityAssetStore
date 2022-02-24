@@ -119,16 +119,18 @@ def webdriver_settings():
 	return op
 
 
-def scrape():
+def scrape(repo_id, repo_name, password):
 
 	# Web driver
 	op = webdriver_settings()
 	br = webdriver.Firefox(options = op)
 	wait = WebDriverWait(br, 5)
 
+	"""
 	# User info
 	EMAIL = "lainey.chylik@gmail.com"
 	PASSWORD = "Password22"
+	"""
 
 	# Navigate to the unity Asset Store login page
 	URL = 'https://assetstore.unity.com/account/assets'
@@ -141,8 +143,8 @@ def scrape():
 	login_button = br.find_element(By.NAME, 'commit')
 
 	# Log In
-	email_field.send_keys(EMAIL)
-	password_field.send_keys(PASSWORD)
+	email_field.send_keys(repo_id)
+	password_field.send_keys(repo_password)
 	login_button.click()
 
 	# Entered the 'My Asset Page'
@@ -155,6 +157,10 @@ def scrape():
 	# Loop thru Asset pages
 	has_next_page = True
 	assets = []
+	new_repo = Repo.objects.create(
+		RepoKey = Repo.objects.count() + 1,
+		Name = repo_name,
+		Identifier = repo_id)	
 	while has_next_page:
 
 		# Find all asset div containers on the page
@@ -219,8 +225,7 @@ def scrape():
 				LastUpdated = last_updated,
 				VersionNum = version_num,
 				ImgLink = img,
-				RepoKey = Repo.objects.get(RepoKey = 1)) 	# This line: TESTING PURPOSES
-															# Must change into the current user's repo in deployed app
+				RepoKey = new_repo) 
 
 			# Close asset window
 			br.find_element(By.CLASS_NAME, '_1VOoF').click()
@@ -244,6 +249,4 @@ def scrape():
 	br.quit()
 
 	# Print list of assets and corresponding data
-	print_assets(assets)
-
-scrape()
+	return assets
