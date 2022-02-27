@@ -60,13 +60,6 @@ def parse_date(str_date):
 
 	return datetime.date(int(year), int(month), int(day))
 
-def print_assets(assets):
-
-	for asset in assets:
-		print(asset)
-
-	print(len(assets))
-
 # Initializes the web driver settings used for scraping the web site
 def webdriver_settings():
 
@@ -118,8 +111,28 @@ def webdriver_settings():
 
 	return op
 
+def add_to_database(repo_name, unity_email, assets):
 
-def scrape(repo_id, repo_name, password):
+	# Create new repo in database
+	new_repo = Repo.objects.create(
+		RepoKey = Repo.objects.count() + 1,
+		Name = repo_name,
+		Identifier = unity_email)	
+
+	# Create new assets in database
+	for a in assets:
+		Asset.objects.create(
+			AID = a['id'],
+			AssetName = a['title'],
+			AssetLink = a['link'],
+			LastUpdated = a['last updated'],
+			VersionNum = a['version'],
+			ImgLink = a['image'],
+			RepoKey = new_repo) 
+
+
+
+def scrape(repo_name, unity_email, unity_password):
 
 	# Web driver
 	op = webdriver_settings()
@@ -143,8 +156,8 @@ def scrape(repo_id, repo_name, password):
 	login_button = br.find_element(By.NAME, 'commit')
 
 	# Log In
-	email_field.send_keys(repo_id)
-	password_field.send_keys(repo_password)
+	email_field.send_keys(unity_email)
+	password_field.send_keys(unity_password)
 	login_button.click()
 
 	# Entered the 'My Asset Page'
@@ -157,10 +170,6 @@ def scrape(repo_id, repo_name, password):
 	# Loop thru Asset pages
 	has_next_page = True
 	assets = []
-	new_repo = Repo.objects.create(
-		RepoKey = Repo.objects.count() + 1,
-		Name = repo_name,
-		Identifier = repo_id)	
 	while has_next_page:
 
 		# Find all asset div containers on the page
@@ -214,18 +223,10 @@ def scrape(repo_id, repo_name, password):
 				'labels' : label_list,
 				'link' : link,
 				'version' : version_num,
-				'last updated' : str_last_updated,
+				'last updated' : last_updated,
 				'image' : img } ) 
 
-			# Add the asset into the Django database
-			Asset.objects.create(
-				AID = asset_id,
-				AssetName = title,
-				AssetLink = link,
-				LastUpdated = last_updated,
-				VersionNum = version_num,
-				ImgLink = img,
-				RepoKey = new_repo) 
+			
 
 			# Close asset window
 			br.find_element(By.CLASS_NAME, '_1VOoF').click()
@@ -248,5 +249,5 @@ def scrape(repo_id, repo_name, password):
 	# Close the browser
 	br.quit()
 
-	# Print list of assets and corresponding data
-	return assets
+	add_to_database(repo_name, unity_email, assets)
+	
