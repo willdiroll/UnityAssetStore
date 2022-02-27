@@ -119,7 +119,7 @@ def webdriver_settings():
 	return op
 
 
-def scrape(repo_id, repo_name, password):
+def scrape(repo_id, repo_name, repo_password):
 
 	# Web driver
 	op = webdriver_settings()
