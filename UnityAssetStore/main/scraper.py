@@ -115,20 +115,48 @@ def add_to_database(repo_name, unity_email, assets):
 
 	# Create new repo in database
 	new_repo = Repo.objects.create(
-		RepoKey = Repo.objects.count() + 1,
+		Key = Repo.objects.count() + 1,
 		Name = repo_name,
 		Identifier = unity_email)	
 
-	# Create new assets in database
+	# Loop thru each scraped asset
 	for a in assets:
-		Asset.objects.create(
-			AID = a['id'],
-			AssetName = a['title'],
-			AssetLink = a['link'],
-			LastUpdated = a['last updated'],
-			VersionNum = a['version'],
-			ImgLink = a['image'],
-			RepoKey = new_repo) 
+
+		# Create Asset
+		if not Asset.objects.filter(AID=a['id']).exists():
+			# If asset doesn't exist yet, add it
+			asset = Asset.objects.create(
+				AID = a['id'],
+				AssetName = a['title'],
+				AssetLink = a['link'],
+				LastUpdated = a['last updated'],
+				VersionNum = a['version'],
+				ImgLink = a['image'])
+		else:
+			# Else, retrieve existing asset
+			asset = Asset.objects.get(AID=a['id'])
+
+		# Add Asset -> Repo
+		asset.Repos.add(new_repo) 
+
+		# Add Categories -> Asset
+		for c in a['categories']:
+			if not Category.objects.filter(CategoryName=c).exists():
+				# If category doesn't exist yet, add it
+				category = Category.objects.create(CategoryName=c)
+			else:
+				category = Category.objects.get(CategoryName=c)
+		category.Assets.add(asset)
+
+		# Add Labels -> Asset
+		for l in a['labels']:
+			if not Label.objects.filter(LabelName=l).exists():
+				# If category doesn't exist yet, add it
+				label = Label.objects.create(LabelName=l)
+			else:
+				label = Label.objects.get(LabelName=l)
+		label.Assets.add(asset)
+
 
 def scrape(repo_name, unity_email, unity_password):
 

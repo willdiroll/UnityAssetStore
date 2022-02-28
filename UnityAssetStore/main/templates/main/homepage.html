@@ -17,7 +17,9 @@
                 <th>Asset Link</th>
                 <th>Last Updated</th>
                 <th>Version Number</th>
-                <th>Repo Key</th>
+                <th>Repos</th>
+                <th>Categories</th>
+                <th>Labels</th>
             </tr>
             {% for asset in all_assets %}
             <tr>
@@ -25,7 +27,9 @@
                 <td>{{ asset.AssetLink }}</td>
                 <td>{{ asset.LastUpdated }}</td>
                 <td>{{ asset.VersionNum }}</td>
-                <td>{{ asset.RepoKey }}</td>
+                <td>{{ asset.Repos.all }}</td>
+                <td>{{ asset.category_set.all }}</td>
+                <td>{{ asset.label_set.all }}</td>
             </tr>
             {% endfor %}
     </table>
