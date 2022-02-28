@@ -10,10 +10,26 @@
         <input type="button" name="leave" id="leave" value="Leave" onclick="location.href = 'http://127.0.0.1:8000/join'" style="float: right;">
 
         <br>
-        {% for asset in all_assets %}
-            {{ asset.AssetName }}
-            <br>
-        {% endfor %}
+
+        <table>
+            <tr>
+                <th>Asset Name</th>
+                <th>Asset Link</th>
+                <th>Last Updated</th>
+                <th>Version Number</th>
+                <th>Repo Key</th>
+            </tr>
+            {% for asset in all_assets %}
+            <tr>
+                <td>{{ asset.AssetName }}</td>
+                <td>{{ asset.AssetLink }}</td>
+                <td>{{ asset.LastUpdated }}</td>
+                <td>{{ asset.VersionNum }}</td>
+                <td>{{ asset.RepoKey }}</td>
+            </tr>
+            {% endfor %}
+    </table>
+        
     </body>
 </html>
 

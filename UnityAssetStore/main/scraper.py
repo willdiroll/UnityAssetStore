@@ -130,8 +130,6 @@ def add_to_database(repo_name, unity_email, assets):
 			ImgLink = a['image'],
 			RepoKey = new_repo) 
 
-
-
 def scrape(repo_name, unity_email, unity_password):
 
 	# Web driver
