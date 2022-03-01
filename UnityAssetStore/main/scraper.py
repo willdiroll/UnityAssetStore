@@ -60,13 +60,6 @@ def parse_date(str_date):
 
 	return datetime.date(int(year), int(month), int(day))
 
-def print_assets(assets):
-
-	for asset in assets:
-		print(asset)
-
-	print(len(assets))
-
 # Initializes the web driver settings used for scraping the web site
 def webdriver_settings():
 
@@ -118,8 +111,54 @@ def webdriver_settings():
 
 	return op
 
+def add_to_database(repo_name, unity_email, assets):
 
-def scrape(repo_id, repo_name, repo_password):
+	# Create new repo in database
+	new_repo = Repo.objects.create(
+		Key = Repo.objects.count() + 1,
+		Name = repo_name,
+		Identifier = unity_email)	
+
+	# Loop thru each scraped asset
+	for a in assets:
+
+		# Create Asset
+		if not Asset.objects.filter(AID=a['id']).exists():
+			# If asset doesn't exist yet, add it
+			asset = Asset.objects.create(
+				AID = a['id'],
+				AssetName = a['title'],
+				AssetLink = a['link'],
+				LastUpdated = a['last updated'],
+				VersionNum = a['version'],
+				ImgLink = a['image'])
+		else:
+			# Else, retrieve existing asset
+			asset = Asset.objects.get(AID=a['id'])
+
+		# Add Asset -> Repo
+		asset.Repos.add(new_repo) 
+
+		# Add Categories -> Asset
+		for c in a['categories']:
+			if not Category.objects.filter(CategoryName=c).exists():
+				# If category doesn't exist yet, add it
+				category = Category.objects.create(CategoryName=c)
+			else:
+				category = Category.objects.get(CategoryName=c)
+			category.Assets.add(asset)
+
+		# Add Labels -> Asset
+		for l in a['labels']:
+			if not Label.objects.filter(LabelName=l).exists():
+				# If category doesn't exist yet, add it
+				label = Label.objects.create(LabelName=l)
+			else:
+				label = Label.objects.get(LabelName=l)
+			label.Assets.add(asset)
+
+
+def scrape(repo_name, unity_email, unity_password):
 
 	# Web driver
 	op = webdriver_settings()
@@ -143,8 +182,8 @@ def scrape(repo_id, repo_name, repo_password):
 	login_button = br.find_element(By.NAME, 'commit')
 
 	# Log In
-	email_field.send_keys(repo_id)
-	password_field.send_keys(repo_password)
+	email_field.send_keys(unity_email)
+	password_field.send_keys(unity_password)
 	login_button.click()
 
 	# Entered the 'My Asset Page'
@@ -157,10 +196,6 @@ def scrape(repo_id, repo_name, repo_password):
 	# Loop thru Asset pages
 	has_next_page = True
 	assets = []
-	new_repo = Repo.objects.create(
-		RepoKey = Repo.objects.count() + 1,
-		Name = repo_name,
-		Identifier = repo_id)	
 	while has_next_page:
 
 		# Find all asset div containers on the page
@@ -214,18 +249,10 @@ def scrape(repo_id, repo_name, repo_password):
 				'labels' : label_list,
 				'link' : link,
 				'version' : version_num,
-				'last updated' : str_last_updated,
+				'last updated' : last_updated,
 				'image' : img } ) 
 
-			# Add the asset into the Django database
-			Asset.objects.create(
-				AID = asset_id,
-				AssetName = title,
-				AssetLink = link,
-				LastUpdated = last_updated,
-				VersionNum = version_num,
-				ImgLink = img,
-				RepoKey = new_repo) 
+			
 
 			# Close asset window
 			br.find_element(By.CLASS_NAME, '_1VOoF').click()
@@ -248,5 +275,5 @@ def scrape(repo_id, repo_name, repo_password):
 	# Close the browser
 	br.quit()
 
-	# Print list of assets and corresponding data
-	return assets
+	add_to_database(repo_name, unity_email, assets)
+	

@@ -4,7 +4,7 @@ import datetime
 import django
 
 class Repo(models.Model):
-    RepoKey = models.IntegerField(primary_key=True)
+    Key = models.IntegerField(default=1, unique=True)
     Name = models.CharField(max_length=100)
     Identifier = models.CharField(max_length=100)
 
@@ -12,28 +12,28 @@ class Repo(models.Model):
         return self.Name
 
 class Asset(models.Model):
-    AID = models.IntegerField(primary_key=True)
+    AID = models.IntegerField(default=0, unique=True)
     AssetName = models.CharField(max_length=100)
     AssetLink = models.CharField(max_length=100)
     LastUpdated = models.DateField(default= django.utils.timezone.now)
     VersionNum = models.CharField(max_length=100)
     ImgLink = models.CharField(max_length=100)
-    RepoKey = models.ForeignKey(Repo, default=None, on_delete=models.CASCADE)
+    Repos = models.ManyToManyField(Repo)
 
     def __str__(self):
         return self.AssetName
 
 class Label(models.Model):
-    AID = models.ForeignKey(Asset, default=None, on_delete=models.CASCADE)
-    LabelName = models.CharField(max_length=100)
-
+    LabelName = models.CharField(max_length=100, unique=True)
+    Assets = models.ManyToManyField(Asset)
+    
     def __str__(self):
-        return self.AssetName
+        return self.LabelName
 
 class Category(models.Model):
-    AID = models.ForeignKey(Asset, default=None, on_delete=models.CASCADE)
-    CategoryName = models.CharField(max_length=100)
-
+    CategoryName = models.CharField(max_length=100, unique=True)
+    Assets = models.ManyToManyField(Asset)
+    
     def __str__(self):
         return self.CategoryName
 

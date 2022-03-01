@@ -7,13 +7,13 @@
         <form method="post" action="/home/">
             </br>
             Input email of your Unity Asset Store account:
-            <input type="text" id="create_email" name="create_email"></br></br>
+            <input type="email" id="create_email" name="create_email"></br></br>
             Input password of you Unity Asset Store account:
-            <input type="text" id="create_password" name="create_password"></br></br>
+            <input type="password" id="create_password" name="create_password"></br></br>
             Input name of repository you want to create:
             <input type="text" id="create_name" name="create_name"><br><br>
             {% csrf_token %}
-            <button type="submit" name="run_scraper">Create</button>
+            <button type="submit" name="create_repo">Create</button>
         </form>
     </body>
 </html>
