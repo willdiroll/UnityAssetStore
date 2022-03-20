@@ -9,5 +9,5 @@ urlpatterns = [
     path("asset_info/", views.asset_info, name="asset_info"),
     path("edit_asset/", views.edit_asset, name="edit_asset"),
     path("add_asset/", views.add_asset, name="add_asset"),
-    path("credits/", views.credits, name="credits")
+    path("credits/", views.credits, name="credits"),
 ]

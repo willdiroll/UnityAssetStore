@@ -1,0 +1,58 @@
+
+<html>
+    <head>
+        <title>Unity Asset Store</title>
+    </head>
+    <body>
+        <h1>Home/Assets Page</h1><br>
+        <input type="text" name="asset_search_text" id="asset_search_text">
+        <input type="button" name="asset_search_button" id="asset_search_button" value="Search" onclick="">
+        <input type="button" name="leave" id="leave" value="Leave" onclick="location.href = 'http://127.0.0.1:8000/join'" style="float: right;">
+
+        <br>
+
+        <table border="1">
+            <tr>
+                <th>Asset Name</th>
+                <th>Last Updated</th>
+                <th>Version Number</th>
+                <th>Image Preview</th>
+                <th>Repos</th>
+                <th>Categories</th>
+                <th>Labels</th>
+            </tr>
+            {% for asset in all_assets %}
+            <tr>
+                <td><a href="{{asset.AssetLink}}">{{ asset.AssetName }}</a></td>
+                <td>{{ asset.LastUpdated }}</td>
+                <td>{{ asset.VersionNum }}</td>
+                <td><img src="https://{{ asset.ImgLink }}"/></td>
+                <td>
+                    <ul>
+                        {% for repo in asset.Repos.all %}
+                            <li>{{ repo.Name }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        {% for category in asset.category_set.all %}
+                            <li>{{ category.CategoryName }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        {% for label in asset.label_set.all %}
+                            <li>{{ label.LabelName }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+            {% endfor %}
+    </table>
+        
+    </body>
+</html>
+
+

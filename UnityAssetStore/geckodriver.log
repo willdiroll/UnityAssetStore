@@ -1,0 +1,1700 @@
+1644919881639	geckodriver	INFO	Listening on 127.0.0.1:55255
+1644919882169	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "55256" "-foreground" "-no-remote" "-profile" "/var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofile8XtgfF"
+1644919882829	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofile8XtgfF/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:55256/devtools/browser/8c99fb17-b45c-4a30-852e-e17dd4d00426
+1644919885160	Marionette	INFO	Listening on port 55262
+1644919885210	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644919889923	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: Bt(...).el[0] is undefined
+1644920064373	Marionette	INFO	Stopped listening on port 55262
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1644965008510	geckodriver	INFO	Listening on 127.0.0.1:56784
+1644965009036	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "56785" "-foreground" "-no-remote" "-profile" "/var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofileJhXBwC"
+1644965009864	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofileJhXBwC/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:56785/devtools/browser/46e807f7-3faa-416d-b162-44a99b987127
+1644965012114	Marionette	INFO	Listening on port 56790
+1644965012185	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644965015575	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644965036361	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644965037101	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644965040436	Marionette	INFO	Stopped listening on port 56790
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1644965046068	geckodriver	INFO	Listening on 127.0.0.1:56938
+1644965046081	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "56939" "-foreground" "-no-remote" "-profile" "/var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofileTrjrfO"
+1644965046721	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofileTrjrfO/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:56939/devtools/browser/1f10ac77-eb16-4ef7-9894-eb9a4fb3450e
+1644965049302	Marionette	INFO	Listening on port 56942
+1644965049415	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644965052442	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: Bt(...).el[0] is undefined
+1644965214811	Marionette	INFO	Stopped listening on port 56942
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1644965723078	geckodriver	INFO	Listening on 127.0.0.1:57179
+1644965723095	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "57180" "-foreground" "-no-remote" "-profile" "/var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofilePDo5sQ"
+1644965723848	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofilePDo5sQ/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:57180/devtools/browser/b7644cfc-3eaf-48d4-9456-57e425a96e44
+1644965726290	Marionette	INFO	Listening on port 57183
+1644965726342	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644965730592	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: Bt(...).el[0] is undefined
+1644965834493	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644965905232	Marionette	INFO	Stopped listening on port 57183
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DestroyBrowsingContextGroup) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1644966347386	geckodriver	INFO	Listening on 127.0.0.1:57440
+1644966347402	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "57441" "-foreground" "-no-remote" "-profile" "/var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofileEVkRwd"
+1644966348053	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofileEVkRwd/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:57441/devtools/browser/fe62aadc-fe61-4f4c-9737-151a25197579
+1644966349907	Marionette	INFO	Listening on port 57444
+1644966349992	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644966354270	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: Bt(...).el[0] is undefined
+1644966527338	Marionette	INFO	Stopped listening on port 57444
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1644967522265	geckodriver	INFO	Listening on 127.0.0.1:57780
+1644967522307	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "57781" "-foreground" "-no-remote" "-profile" "/var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofilegYG4kJ"
+1644967523219	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofilegYG4kJ/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:57781/devtools/browser/a81e8498-fd4e-4d6d-9125-96e55a99d083
+1644967525701	Marionette	INFO	Listening on port 57784
+1644967525820	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644967533546	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: Bt(...).el[0] is undefined
+1644967707289	Marionette	INFO	Stopped listening on port 57784
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1644967737377	geckodriver	INFO	Listening on 127.0.0.1:58008
+1644967737409	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "58009" "-foreground" "-no-remote" "-profile" "/var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofileyf4NKq"
+1644967738092	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofileyf4NKq/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:58009/devtools/browser/0cce1296-1ce8-44c3-adee-30d3212b8b5f
+1644967739987	Marionette	INFO	Listening on port 58012
+1644967740111	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644967743278	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: Bt(...).el[0] is undefined
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+1644967905051	Marionette	INFO	Stopped listening on port 58012
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1644967957914	geckodriver	INFO	Listening on 127.0.0.1:58209
+1644967957950	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "58210" "-foreground" "-no-remote" "-profile" "/var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofileli5JHU"
+1644967958646	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofileli5JHU/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:58210/devtools/browser/5e0dc6e7-de4e-4a0b-a158-eb4c940d2bd4
+1644967960694	Marionette	INFO	Listening on port 58213
+1644967960766	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644967964992	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: Bt(...).el[0] is undefined
+1644968136190	Marionette	INFO	Stopped listening on port 58213
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1644968203005	geckodriver	INFO	Listening on 127.0.0.1:58443
+1644968203037	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "58444" "-foreground" "-no-remote" "-profile" "/var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofilet2E1vh"
+1644968203654	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofilet2E1vh/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:58444/devtools/browser/df7ae477-0ec7-4d92-b971-f554bc61b373
+1644968205776	Marionette	INFO	Listening on port 58447
+1644968205840	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644968208932	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: Bt(...).el[0] is undefined
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/9b7fa1ad18edecea44140203007bdd6c-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/9b7fa1ad18edecea44140203007bdd6c-v2.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.sketchfab.com/static/builds/web/dist/9b7fa1ad18edecea44140203007bdd6c-v2.js, line 2: WebGL context was lost.
+1644968370268	Marionette	INFO	Stopped listening on port 58447
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1644968493118	geckodriver	INFO	Listening on 127.0.0.1:58612
+1644968493150	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "58613" "-foreground" "-no-remote" "-profile" "/var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofileuaFt3N"
+1644968493795	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofileuaFt3N/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:58613/devtools/browser/399b7190-d2c8-41f7-825c-4e784539af5c
+1644968495819	Marionette	INFO	Listening on port 58616
+1644968495935	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644968498972	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: Bt(...).el[0] is undefined
+1644968660552	Marionette	INFO	Stopped listening on port 58616
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1644972207798	geckodriver	INFO	Listening on 127.0.0.1:59301
+1644972208297	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47355" "-no-remote" "-profile" "/tmp/rust_mozprofileEBxlHW"
+1644972209407	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEBxlHW/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:47355/devtools/browser/644e7068-920f-4437-9657-73ae4b57e208
+1644972212279	Marionette	INFO	Listening on port 38703
+1644972212358	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644972217476	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644972227165	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644972229987	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644972238381	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644972241543	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644972243722	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644972246958	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644972250281	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644972257853	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644972260953	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644972262871	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644972263544	Marionette	INFO	Stopped listening on port 38703
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x3A0078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1644972319932	geckodriver	INFO	Listening on 127.0.0.1:37771
+1644972320435	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47589" "-no-remote" "-profile" "/tmp/rust_mozprofileXOeHnf"
+1644972321755	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXOeHnf/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:47589/devtools/browser/b9c1ec1b-05dd-4917-b5e3-ba4374d0ea3f
+1644972324311	Marionette	INFO	Listening on port 39903
+1644972324393	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1644972367062	Marionette	INFO	Stopped listening on port 39903
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1644972369865	geckodriver	INFO	Listening on 127.0.0.1:38557
+1644972370368	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53249" "-no-remote" "-profile" "/tmp/rust_mozprofileQOPs6y"
+1644972371354	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQOPs6y/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53249/devtools/browser/64616100-7420-439a-b532-c7b21b1d4a68
+1644972373958	Marionette	INFO	Listening on port 43177
+1644972374024	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1644972434255	Marionette	INFO	Stopped listening on port 43177
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1644972460410	geckodriver	INFO	Listening on 127.0.0.1:34583
+1644972460913	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57605" "-no-remote" "-profile" "/tmp/rust_mozprofileDWqx6r"
+1644972461913	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDWqx6r/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57605/devtools/browser/08b11d30-099b-43be-9c14-f23b83d22638
+1644972465139	Marionette	INFO	Listening on port 36453
+1644972465191	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1644972490749	Marionette	INFO	Stopped listening on port 36453
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1644972833999	geckodriver	INFO	Listening on 127.0.0.1:51775
+1644972834516	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "44493" "-no-remote" "-profile" "/tmp/rust_mozprofileasE4hB"
+1644972835285	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileasE4hB/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:44493/devtools/browser/5f143ac9-fd7d-4be5-81f0-b170ddf9ff49
+1644972840093	Marionette	INFO	Listening on port 35313
+1644972840176	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: r is undefined
+1644972846450	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644972851500	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:239:19
+TimedPromise@chrome://remote/content/marionette/sync.js:224:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644972872571	Marionette	INFO	Stopped listening on port 35313
+1644972970211	geckodriver	INFO	Listening on 127.0.0.1:36513
+1644972970717	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "44583" "-no-remote" "-profile" "/tmp/rust_mozprofileU024dD"
+1644972971520	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileU024dD/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:44583/devtools/browser/f6949c1e-2dd1-4bde-9ef5-74a3ef3fc322
+1644972974261	Marionette	INFO	Listening on port 46149
+1644972974312	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1644972979387	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644972996743	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644973009621	Marionette	INFO	Stopped listening on port 46149
+1644973016161	geckodriver	INFO	Listening on 127.0.0.1:45559
+1644973016666	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55487" "-no-remote" "-profile" "/tmp/rust_mozprofileNyWSU7"
+1644973017437	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNyWSU7/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55487/devtools/browser/93fb5166-9836-4872-843b-01a944c79133
+1644973020227	Marionette	INFO	Listening on port 43203
+1644973020329	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: r is undefined
+1644973024843	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: Bt(...).el[0] is undefined
+1644973053179	Marionette	INFO	Stopped listening on port 43203
+1644973390419	geckodriver	INFO	Listening on 127.0.0.1:41521
+1644973390924	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59679" "-no-remote" "-profile" "/tmp/rust_mozprofileeSmmdH"
+1644973391828	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileeSmmdH/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59679/devtools/browser/006b76b5-b11b-4c43-89d5-fb5c6ec5c940
+1644973394619	Marionette	INFO	Listening on port 37243
+1644973394676	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644973401305	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644973421345	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644973424915	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644973428980	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1644973431653	Marionette	INFO	Stopped listening on port 37243
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1645135952316	geckodriver	INFO	Listening on 127.0.0.1:64790
+1645135952367	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "64791" "-foreground" "-no-remote" "-profile" "/var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofile893NZE"
+1645135953612	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/bn/4xwqdbh14g913m9vskfzc0t40000gn/T/rust_mozprofile893NZE/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+DevTools listening on ws://localhost:64791/devtools/browser/96e0cc01-79a5-4276-bdc2-5031b763f6ab
+1645135956236	Marionette	INFO	Listening on port 64795
+1645135956294	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645135960315	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 55284, MediaDecoderStateMachine #1] WARNING: 12c685300 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:375
+1645147213633	geckodriver	INFO	Listening on 127.0.0.1:48571
+1645147214138	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39437" "-no-remote" "-profile" "/tmp/rust_mozprofilef100PW"
+1645147215057	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilef100PW/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39437/devtools/browser/bc0bd465-105e-42e0-aa90-a5579a73d803
+1645147217896	Marionette	INFO	Listening on port 46337
+1645147218012	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645147223127	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645147228877	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645147231705	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645147247314	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645147250457	Marionette	INFO	Stopped listening on port 46337
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DestroyBrowsingContextGroup) Channel closing: too late to send/recv, messages will be lost
+
+1645148036300	geckodriver	INFO	Listening on 127.0.0.1:55877
+1645148036806	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54611" "-no-remote" "-profile" "/tmp/rust_mozprofilejt5E9c"
+1645148037587	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejt5E9c/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54611/devtools/browser/db312eb1-968c-4c84-aa74-11e5fda71593
+1645148040206	Marionette	INFO	Listening on port 41825
+1645148040263	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1645148045806	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645148058611	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1645148151586	geckodriver	INFO	Listening on 127.0.0.1:34759
+1645148152092	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48001" "-no-remote" "-profile" "/tmp/rust_mozprofile4sfl8a"
+1645148152887	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile4sfl8a/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48001/devtools/browser/1b04e8ea-e376-4826-8912-809b66a43a71
+1645148155935	Marionette	INFO	Listening on port 39431
+1645148156048	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: Bt(...).el[0] is undefined
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645148162467	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645148187572	Marionette	INFO	Stopped listening on port 39431
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1645148227169	geckodriver	INFO	Listening on 127.0.0.1:33351
+1645148227676	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37875" "-no-remote" "-profile" "/tmp/rust_mozprofilecYSgNP"
+1645148228565	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilecYSgNP/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:37875/devtools/browser/5dd54a5a-d92e-4295-946f-50c2f9512241
+1645148231471	Marionette	INFO	Listening on port 44459
+1645148231563	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645148236811	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645148241994	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645148245578	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645148249914	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1645148251301	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645148255726	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645148256743	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645148259494	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645148265713	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645148271514	Marionette	INFO	Stopped listening on port 44459
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1645148418309	geckodriver	INFO	Listening on 127.0.0.1:54613
+1645148418816	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "42603" "-no-remote" "-profile" "/tmp/rust_mozprofilehjdYh1"
+1645148420250	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehjdYh1/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1645148426970	Marionette	INFO	Stopped listening on port 41825
+1645148431625	geckodriver	INFO	Listening on 127.0.0.1:51907
+1645148432131	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53685" "-no-remote" "-profile" "/tmp/rust_mozprofile0nBzSj"
+1645148432949	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0nBzSj/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53685/devtools/browser/247913e7-e68f-4512-b883-15fc2c2f9419
+1645148435625	Marionette	INFO	Listening on port 36257
+1645148435692	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: Bt(...).el[0] is undefined
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645148442782	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645148467478	Marionette	INFO	Stopped listening on port 36257
+1645149618145	geckodriver	INFO	Listening on 127.0.0.1:38501
+1645149618650	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "38683" "-no-remote" "-profile" "/tmp/rust_mozprofile8qexxw"
+1645149619412	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8qexxw/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:38683/devtools/browser/a8b080a5-a070-407e-88d9-5ace9d1a6121
+1645149622058	Marionette	INFO	Listening on port 41037
+1645149622127	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: Bt(...).el[0] is undefined
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645149627834	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645149707822	geckodriver	INFO	Listening on 127.0.0.1:47239
+1645149708330	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56285" "-no-remote" "-profile" "/tmp/rust_mozprofilekf7KWh"
+1645149710934	Marionette	INFO	Stopped listening on port 41037
+1645149711967	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekf7KWh/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56285/devtools/browser/e7b76ce7-f215-4dac-a171-57265265212b
+1645149714905	Marionette	INFO	Listening on port 34287
+1645149714927	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1645149720474	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645149771132	geckodriver	INFO	Listening on 127.0.0.1:58425
+1645149771637	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41719" "-no-remote" "-profile" "/tmp/rust_mozprofile7TX89f"
+1645149772820	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile7TX89f/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:41719/devtools/browser/db66cca4-f733-4a9f-86de-3f20918518df
+1645149775907	Marionette	INFO	Listening on port 35891
+1645149776024	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1645149781025	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: Bt(...).el[0] is undefined
+1645149786338	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645149811365	Marionette	INFO	Stopped listening on port 35891
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1645149846069	Marionette	INFO	Stopped listening on port 34287
+1645149848325	geckodriver	INFO	Listening on 127.0.0.1:56439
+1645149848831	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "52713" "-no-remote" "-profile" "/tmp/rust_mozprofilezMfCw8"
+1645149849608	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezMfCw8/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52713/devtools/browser/cfa3cbdf-ae5f-4cd2-8049-6f2726bde230
+1645149852343	Marionette	INFO	Listening on port 46265
+1645149852404	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645149857420	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645149871109	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645149894334	Marionette	INFO	Stopped listening on port 46265
+1645149899750	geckodriver	INFO	Listening on 127.0.0.1:44413
+1645149900259	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "51817" "-no-remote" "-profile" "/tmp/rust_mozprofile9m7rNr"
+1645149901170	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile9m7rNr/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51817/devtools/browser/6ebf2fe6-be00-410a-930d-193b9e4b79d0
+1645149903942	Marionette	INFO	Listening on port 40787
+1645149904019	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645149909223	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645149914388	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645149917795	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645149924675	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645149941450	Marionette	INFO	Stopped listening on port 40787
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1645149987399	geckodriver	INFO	Listening on 127.0.0.1:52437
+1645149987906	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49653" "-no-remote" "-profile" "/tmp/rust_mozprofileto4JH1"
+1645149988642	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileto4JH1/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49653/devtools/browser/ca4b2736-4889-4851-8edd-6e8bc3ba5425
+1645149991850	Marionette	INFO	Listening on port 39761
+1645149991878	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645149997540	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645150009061	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645150011046	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645150025382	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645150026789	Marionette	INFO	Stopped listening on port 39761
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1645671458506	geckodriver	INFO	Listening on 127.0.0.1:60585
+1645671459014	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40927" "-no-remote" "-profile" "/tmp/rust_mozprofilea4rVSn"
+1645671459842	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilea4rVSn/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:40927/devtools/browser/d90f1be7-e954-4262-bc59-17037bca9844
+1645671462647	Marionette	INFO	Listening on port 42591
+1645671462668	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645671468078	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645671476157	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645671478019	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645671481957	geckodriver	INFO	Listening on 127.0.0.1:39261
+1645671481970	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54227" "-no-remote" "-profile" "/tmp/rust_mozprofileE61nQy"
+1645671483517	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileE61nQy/search.json.mozlz4", (void 0)))
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 2983: TypeError: event.target.closest is not a function
+DevTools listening on ws://localhost:54227/devtools/browser/8b4e6240-d670-4fa3-adc7-84e23b54efa5
+1645671486869	Marionette	INFO	Listening on port 35785
+1645671487001	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1645675303066	geckodriver	INFO	Listening on 127.0.0.1:57127
+1645675303571	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41315" "-no-remote" "-profile" "/tmp/rust_mozprofilehLyGso"
+1645675304447	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehLyGso/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:41315/devtools/browser/345da2d5-40a1-490c-abb2-951afec19ae4
+1645675307127	Marionette	INFO	Listening on port 38625
+1645675307264	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1645675312372	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645675325772	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645675334556	Marionette	INFO	Stopped listening on port 38625
+1645675962817	geckodriver	INFO	Listening on 127.0.0.1:54275
+1645675963343	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47427" "-no-remote" "-profile" "/tmp/rust_mozprofileVppeDD"
+1645675964281	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVppeDD/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:47427/devtools/browser/b5baef52-c1ad-4c6d-9b3b-b6f990098fe7
+1645675966955	Marionette	INFO	Listening on port 43955
+1645675966997	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645675973771	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645675983639	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645675985713	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645675990847	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645675993620	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645675995206	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645675996196	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645675998949	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645676002900	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645676005907	Marionette	INFO	Stopped listening on port 43955
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1645676269019	geckodriver	INFO	Listening on 127.0.0.1:47925
+1645676269525	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "52833" "-no-remote" "-profile" "/tmp/rust_mozprofilem8XARD"
+1645676270496	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilem8XARD/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52833/devtools/browser/9a52f165-1aac-4082-b717-9e7ef9f365df
+1645676273303	Marionette	INFO	Listening on port 34747
+1645676273409	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1645676278320	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645676285669	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645676292522	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645676303568	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645676303785	Marionette	INFO	Stopped listening on port 34747
+1645676450634	geckodriver	INFO	Listening on 127.0.0.1:49167
+1645676451140	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41117" "-no-remote" "-profile" "/tmp/rust_mozprofilev5nTEf"
+1645676452076	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilev5nTEf/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:41117/devtools/browser/c44fce05-4efd-4f76-819b-8f2200ef0108
+1645676454747	Marionette	INFO	Listening on port 36535
+1645676454800	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1645676460058	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645676485696	Marionette	INFO	Stopped listening on port 36535
+1645676616513	geckodriver	INFO	Listening on 127.0.0.1:42533
+1645676617019	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57387" "-no-remote" "-profile" "/tmp/rust_mozprofileybwIrz"
+1645676617907	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileybwIrz/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57387/devtools/browser/0f6d86f3-91ee-41fe-8113-abeda63f0d5a
+1645676620753	Marionette	INFO	Listening on port 46185
+1645676620777	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645676625663	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645676677294	Marionette	INFO	Stopped listening on port 46185
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1645676679895	geckodriver	INFO	Listening on 127.0.0.1:51229
+1645676680408	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50297" "-no-remote" "-profile" "/tmp/rust_mozprofileoxSytN"
+1645676681495	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileoxSytN/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50297/devtools/browser/31aeba7d-3598-40e2-9ea7-1438ad5fea28
+1645676684224	Marionette	INFO	Listening on port 41075
+1645676684291	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1645676689185	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645676705547	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645676714589	Marionette	INFO	Stopped listening on port 41075
+1645677023352	geckodriver	INFO	Listening on 127.0.0.1:50565
+1645677023862	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "51293" "-no-remote" "-profile" "/tmp/rust_mozprofileEb1niy"
+1645677024830	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEb1niy/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51293/devtools/browser/56cfacbc-c378-4567-a1e8-c0c2e81d826d
+1645677027702	Marionette	INFO	Listening on port 46269
+1645677027723	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1645677032330	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645677054571	Marionette	INFO	Stopped listening on port 46269
+1645678015347	geckodriver	INFO	Listening on 127.0.0.1:37165
+1645678015861	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "43937" "-no-remote" "-profile" "/tmp/rust_mozprofileLDBHOx"
+1645678016963	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLDBHOx/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:43937/devtools/browser/32b0e2d5-957f-421b-9918-fe52188fe496
+1645678019749	Marionette	INFO	Listening on port 41005
+1645678019827	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645678024768	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645678034382	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645678036553	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645678041639	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645678046888	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645678050921	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645678057714	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645678057948	Marionette	INFO	Stopped listening on port 41005
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1645678079261	geckodriver	INFO	Listening on 127.0.0.1:40033
+1645678079768	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46929" "-no-remote" "-profile" "/tmp/rust_mozprofile3P4DwU"
+1645678080822	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3P4DwU/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:46929/devtools/browser/f44dec2c-8941-4a57-8dd7-a98ecbd30388
+1645678084259	Marionette	INFO	Listening on port 34929
+1645678084359	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1645678090042	Marionette	INFO	Stopped listening on port 34929
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1645678590206	geckodriver	INFO	Listening on 127.0.0.1:40579
+1645678590712	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "42373" "-no-remote" "-profile" "/tmp/rust_mozprofileTqher4"
+1645678591575	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileTqher4/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:42373/devtools/browser/df0eaa89-2c2b-4195-8d86-52d160f9f318
+1645678594740	Marionette	INFO	Listening on port 38029
+1645678594776	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1645678600096	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645678620566	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645678625747	Marionette	INFO	Stopped listening on port 38029
+1645679097440	geckodriver	INFO	Listening on 127.0.0.1:47419
+1645679097952	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56711" "-no-remote" "-profile" "/tmp/rust_mozprofileBXymxT"
+1645679098953	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileBXymxT/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56711/devtools/browser/57464c91-0080-45bb-9b7c-194b8842deca
+1645679101973	Marionette	INFO	Listening on port 43835
+1645679102010	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1645679107699	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645679135475	Marionette	INFO	Stopped listening on port 43835
+1645679247615	geckodriver	INFO	Listening on 127.0.0.1:59317
+1645679248120	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "60545" "-no-remote" "-profile" "/tmp/rust_mozprofileORfSuY"
+1645679249121	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileORfSuY/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60545/devtools/browser/819d81a8-aa19-4348-a74c-37aa53864afe
+1645679252977	Marionette	INFO	Listening on port 33629
+1645679253016	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645679259581	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645679260357	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645679276498	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645679281432	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645679284944	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645679286835	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645679289892	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645679290119	Marionette	INFO	Stopped listening on port 33629
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1645679354636	geckodriver	INFO	Listening on 127.0.0.1:45041
+1645679354652	geckodriver	INFO	Listening on 127.0.0.1:46815
+<<<<<<< HEAD
+1645977878231	geckodriver	INFO	Listening on 127.0.0.1:42061
+1645977878754	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41285" "-no-remote" "-profile" "/tmp/rust_mozprofileg0ouK4"
+1645977880842	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileg0ouK4/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:41285/devtools/browser/69ed5719-de42-4444-8a70-c41cd96c290f
+1645977883955	Marionette	INFO	Listening on port 41183
+1645977884070	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645977889744	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645977895136	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645977899213	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645977906682	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645977911378	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645977913258	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645977915726	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645977918892	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645977921287	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645977922478	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645977923418	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645977927193	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645977927423	Marionette	INFO	Stopped listening on port 41183
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1645977979845	geckodriver	INFO	Listening on 127.0.0.1:35635
+1645977980348	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "44949" "-no-remote" "-profile" "/tmp/rust_mozprofilew39uSe"
+1645977981859	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilew39uSe/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:44949/devtools/browser/03cc62d6-e7f5-4921-aeb4-97b3b26bb983
+1645977984757	Marionette	INFO	Listening on port 32785
+1645977984813	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1645977990158	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645978007849	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645978013185	Marionette	INFO	Stopped listening on port 32785
+1645978027046	geckodriver	INFO	Listening on 127.0.0.1:33069
+1645978027556	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58059" "-no-remote" "-profile" "/tmp/rust_mozprofile1cOvkI"
+1645978028744	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1cOvkI/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58059/devtools/browser/1e16b15c-31ad-4fac-b304-be35b004ecd3
+1645978031883	Marionette	INFO	Listening on port 45715
+1645978031929	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645978033748	Marionette	INFO	Stopped listening on port 45715
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1645980047537	geckodriver	INFO	Listening on 127.0.0.1:51515
+1645980048044	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "51419" "-no-remote" "-profile" "/tmp/rust_mozprofile9TXMxm"
+1645980049734	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile9TXMxm/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51419/devtools/browser/5afe4f0c-d3e5-4c63-906b-6ffb17875601
+1645980053933	Marionette	INFO	Listening on port 34035
+1645980054117	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645980059535	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645980064715	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645980068104	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645980074228	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645980081547	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645980082842	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645980084885	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645980088809	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645980090804	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645980093090	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645980097190	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1645980097487	Marionette	INFO	Stopped listening on port 34035
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+=======
+1645812755646	geckodriver	INFO	Listening on 127.0.0.1:60381
+1645812756187	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "60382" "-foreground" "-no-remote" "-profile" "/var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofileYfCZUO"
+1645812757381	Marionette	INFO	Marionette enabled
+2022-02-25 18:12:38.350 firefox-bin[14323:1429168] Warning: Expected min height of view: (<NSButton: 0x11e412800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-25 18:12:38.351 firefox-bin[14323:1429168] Warning: Expected min height of view: (<NSButton: 0x120b32400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-25 18:12:38.351 firefox-bin[14323:1429168] Warning: Expected min height of view: (<NSButton: 0x120b34000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-25 18:12:38.352 firefox-bin[14323:1429168] Warning: Expected min height of view: (<NSButton: 0x120b38800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-25 18:12:38.352 firefox-bin[14323:1429168] Warning: Expected min height of view: (<NSButton: 0x120b39800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-25 18:12:38.353 firefox-bin[14323:1429168] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x120b3ac00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-25 18:12:38.353 firefox-bin[14323:1429168] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x11d3f3400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofileYfCZUO/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:60382/devtools/browser/5f85efd8-193a-47fb-8283-8c3a1d867cea
+1645812759706	Marionette	INFO	Listening on port 60389
+1645812759806	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645812916097	geckodriver	INFO	Listening on 127.0.0.1:60499
+1645812916115	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "60500" "-foreground" "-no-remote" "-profile" "/var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofilevTrrFo"
+1645812916593	Marionette	INFO	Marionette enabled
+2022-02-25 18:15:17.325 firefox-bin[14399:1430847] Warning: Expected min height of view: (<NSButton: 0x11829ac00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-25 18:15:17.326 firefox-bin[14399:1430847] Warning: Expected min height of view: (<NSButton: 0x11ef33c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-25 18:15:17.326 firefox-bin[14399:1430847] Warning: Expected min height of view: (<NSButton: 0x11ef31400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-25 18:15:17.327 firefox-bin[14399:1430847] Warning: Expected min height of view: (<NSButton: 0x11ef32400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-25 18:15:17.328 firefox-bin[14399:1430847] Warning: Expected min height of view: (<NSButton: 0x11ef2dc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-25 18:15:17.328 firefox-bin[14399:1430847] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x11ef30000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-02-25 18:15:17.329 firefox-bin[14399:1430847] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x117f07000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/sx/7_8r76ns0ljc8qvl6mpv9x3w0000gn/T/rust_mozprofilevTrrFo/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:60500/devtools/browser/ca2ad508-b403-4da1-b08c-149837991dd8
+1645812918509	Marionette	INFO	Listening on port 60505
+1645812918595	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645812921150	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645812932890	Marionette	INFO	Stopped listening on port 60505
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+>>>>>>> 2ec260f7413e4b0d9a3adeb16f1229feca760b0c
+1646079970138	geckodriver	INFO	Listening on 127.0.0.1:41537
+1646079970629	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48017" "-no-remote" "-profile" "/tmp/rust_mozprofileQJHPNE"
+1646079972356	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQJHPNE/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48017/devtools/browser/b44b4f35-fd6b-4b6c-b260-ae2afd55dd70
+1646079975469	Marionette	INFO	Listening on port 34353
+1646079975567	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1646079980891	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1646079986503	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646079989715	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646079995178	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646079999185	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080003619	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080005870	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080008125	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080009225	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080010396	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080014644	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080014867	Marionette	INFO	Stopped listening on port 34353
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1646080091737	geckodriver	INFO	Listening on 127.0.0.1:46449
+1646080092240	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55759" "-no-remote" "-profile" "/tmp/rust_mozprofile0wIHzx"
+1646080093240	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0wIHzx/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55759/devtools/browser/83117263-dcf6-4c4d-b30d-49f14cc49403
+1646080096118	Marionette	INFO	Listening on port 41593
+1646080096225	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1646080101797	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1646080107253	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080110441	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080116535	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080121507	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080122681	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080124781	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080130431	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080132306	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080134621	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080139435	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080139664	Marionette	INFO	Stopped listening on port 41593
+1646080236550	geckodriver	INFO	Listening on 127.0.0.1:47835
+1646080237055	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39431" "-no-remote" "-profile" "/tmp/rust_mozprofile6SlJUl"
+1646080238192	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6SlJUl/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39431/devtools/browser/832d6077-1932-41ac-88da-93e1b5f34940
+1646080241056	Marionette	INFO	Listening on port 40119
+1646080241137	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1646080246223	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1646080271353	Marionette	INFO	Stopped listening on port 40119
+1646080732935	geckodriver	INFO	Listening on 127.0.0.1:60681
+1646080733443	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37425" "-no-remote" "-profile" "/tmp/rust_mozprofilelkaxxZ"
+1646080735139	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilelkaxxZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:37425/devtools/browser/7417e799-48c6-4bf1-9b14-3e15ebca57d6
+1646080738180	Marionette	INFO	Listening on port 39949
+1646080738263	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1646080743433	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1646080767793	Marionette	INFO	Stopped listening on port 39949
+1646080954065	geckodriver	INFO	Listening on 127.0.0.1:40415
+1646080954568	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59417" "-no-remote" "-profile" "/tmp/rust_mozprofileQ01X71"
+1646080955464	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQ01X71/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59417/devtools/browser/ab8e1ad3-ec87-40e7-9198-84c3c8cc4241
+1646080958466	Marionette	INFO	Listening on port 36671
+1646080958548	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1646080963441	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1646080972897	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080975333	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080980226	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080991507	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646080994491	Marionette	INFO	Stopped listening on port 36671
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1646161236203	geckodriver	INFO	Listening on 127.0.0.1:48725
+1646161236725	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47537" "-no-remote" "-profile" "/tmp/rust_mozprofilevVOjSD"
+1646161238118	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilevVOjSD/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:47537/devtools/browser/bd6be550-1e06-4cb2-bbbe-3bd1ed2da2cc
+1646161241393	Marionette	INFO	Listening on port 38545
+1646161241516	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1646161247156	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1646161253201	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646161263131	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646161273269	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646161278702	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646161278998	Marionette	INFO	Stopped listening on port 38545
+1646161688143	geckodriver	INFO	Listening on 127.0.0.1:51447
+1646161688652	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37405" "-no-remote" "-profile" "/tmp/rust_mozprofileZxWquR"
+1646161690283	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZxWquR/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:37405/devtools/browser/5eabd9ef-2382-44f5-8dbd-359811dfceb1
+1646161693268	Marionette	INFO	Listening on port 46459
+1646161693357	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdn.cookielaw.org/scripttemplates/6.25.0/otBannerSdk.js, line 7: TypeError: this.selector is null
+1646161698652	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1646161703804	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646161712491	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1646161722934	Marionette	INFO	Stopped listening on port 46459
