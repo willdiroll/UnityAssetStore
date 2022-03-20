@@ -22,3 +22,7 @@ HOW TO MAKE MIGRATION FILES:
  - Once changes are made to database, navigate to the directory with the manage.py file
  - run "python manage.py makemigrations" (this effectively stages the migrations before committing them)
  - run "python manage.py migrate" (this effectively commits the changes and generates a new migration file)
+
+ Requirements 
+ - gunicorn
+ - django-heroku
