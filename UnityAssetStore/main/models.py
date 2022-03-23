@@ -10,8 +10,12 @@ class Repo(models.Model):
 
     def __str__(self):
         return self.Name
+    class Meta:
+        app_label = 'main'
 
 class Asset(models.Model):
+    class Meta:
+        app_label = 'main'
     AID = models.IntegerField(default=0, unique=True)
     AssetName = models.CharField(max_length=100)
     AssetLink = models.CharField(max_length=100)
@@ -24,6 +28,8 @@ class Asset(models.Model):
         return self.AssetName
 
 class Label(models.Model):
+    class Meta:
+        app_label = 'main'
     LabelName = models.CharField(max_length=100, unique=True)
     Assets = models.ManyToManyField(Asset)
     
@@ -31,6 +37,8 @@ class Label(models.Model):
         return self.LabelName
 
 class Category(models.Model):
+    class Meta:
+        app_label = 'main'
     CategoryName = models.CharField(max_length=100, unique=True)
     Assets = models.ManyToManyField(Asset)
     

@@ -7,36 +7,55 @@ import warnings
 import datetime
 
 import os
+import sys
+
 import django
-os.environ["DJANGO_SETTINGS_MODULE"] = 'UAS.settings'
+
+from django.conf import settings
+if not settings.configured:
+	settings.configure(
+		DATABASE_ENGINE = 'django.db.backends.postgresql_psycopg2',
+		DATABASE_NAME = 'uas',
+		DATABASE_USER = 'lainey',
+		DATABASE_PASSWORD = 'test',
+		DATABASE_HOST = 'localhost',
+		DATABASE_PORT = '',
+	)
+
 django.setup()
+
+os.environ["DJANGO_SETTINGS_MODULE"] = 'UAS.settings'
+
+sys.path.append('..')
 from main.models import *
+print("1")
 
 # Breaks down the given link to access the asset's title, ID, and corresponding categories
 def get_link_info(link):
-
+	print("info")
     # Removes the part of link that is uniform throughout
-    trimmed_link = link[38:]
+	trimmed_link = link[38:]
 
     # Puts all of the categories at beginning of info array
-    info = trimmed_link.split('/')
-    title_id = info[len(info) - 1]
-    info.remove(title_id)
-    title_id = title_id.split('-')
-    id = title_id[len(title_id) - 1]
+	info = trimmed_link.split('/')
+	title_id = info[len(info) - 1]
+	info.remove(title_id)
+	title_id = title_id.split('-')
+	id = title_id[len(title_id) - 1]
 
-    # ID added to info[len(info) - 2]
-    info.append(id)
-    title_id.remove(id)
-    title = " ".join(title_id)
+	# ID added to info[len(info) - 2]
+	info.append(id)
+	title_id.remove(id)
+	title = " ".join(title_id)
 
-    # Title added to info[len(info) - 1]
-    info.append(title)
+	# Title added to info[len(info) - 1]
+	info.append(title)
 
-    return info
+	return info
 
 # Parses the string representation of dates (MON DAY, YEAR) into a Date object
 def parse_date(str_date):
+	print("date")
 	split = str_date.split(' ')
 	str_month = split[0]
 	day = split[1].replace(',', '')
@@ -62,7 +81,7 @@ def parse_date(str_date):
 
 # Initializes the web driver settings used for scraping the web site
 def webdriver_settings():
-
+	print("webdriver")
 	# Set up a Firefox webdriver options
 	op = webdriver.FirefoxOptions()	# Must download the Firefox geckodriver from
 									# https://github.com/mozilla/geckodriver/releases
@@ -112,7 +131,7 @@ def webdriver_settings():
 	return op
 
 def add_to_database(repo_name, unity_email, assets):
-
+	print("add")
 	# Create new repo in database
 	new_repo = Repo.objects.create(
 		Key = Repo.objects.count() + 1,
@@ -159,7 +178,7 @@ def add_to_database(repo_name, unity_email, assets):
 
 
 def scrape(repo_name, unity_email, unity_password):
-
+	print("scrape")
 	# Web driver
 	op = webdriver_settings()
 	br = webdriver.Firefox(options = op)
@@ -277,3 +296,4 @@ def scrape(repo_name, unity_email, unity_password):
 
 	add_to_database(repo_name, unity_email, assets)
 	
+# scrape("test_repo", "lainey.chylik@gmail.com", "Password22")
