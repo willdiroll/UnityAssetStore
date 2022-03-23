@@ -2,16 +2,21 @@
 <html>
     <head>
         <title>Unity Asset Store</title>
+
+        <style type="text/css">
+            .assets { float: left }
+            .filters { border:2px solid #000000; width:300px; height: 250px; overflow-y: scroll; margin: 0 auto; }
+            .all_filters { border:2px solid #000000; width:320px; height: 600px; overflow-y: scroll; float: right; }
+        </style>
     </head>
     <body>
         <h1>Home/Assets Page</h1><br>
-        <input type="text" name="asset_search_text" id="asset_search_text">
-        <input type="button" name="asset_search_button" id="asset_search_button" value="Search" onclick="">
+        
         <input type="button" name="leave" id="leave" value="Leave" onclick="location.href = 'http://127.0.0.1:8000/join'" style="float: right;">
 
         <br>
 
-        <table border="1">
+        <table class="assets" border="1">
             <tr>
                 <th>Asset Name</th>
                 <th>Last Updated</th>
@@ -51,6 +56,30 @@
             </tr>
             {% endfor %}
     </table>
+
+    <div class="all_filters">
+        <form method="post" action="/home/">
+            Categories: <br />
+            {% for category in all_categories %}
+                {% if category in filter_categories %}
+                    <input type="checkbox" name="categories[]" checked="checked" value={{ category }} /> {{ category }} <br />
+                {% else %}
+                    <input type="checkbox" name="categories[]" value={{ category }} /> {{ category }} <br />
+                {% endif %}
+            {% endfor %}
+            <br />
+            Labels: <br />
+            {% for label in all_labels %}
+                {% if label in filter_labels %}
+                    <input type="checkbox" name="labels[]" checked="checked" value={{ label }} /> {{ label }} <br />
+                {% else %}
+                    <input type="checkbox" name="labels[]" value={{ label }} /> {{ label }} <br />
+                {% endif %}
+            {% endfor %}
+            {% csrf_token %}
+            <button type="submit" name="filter_assets">Filter</button>
+        </form>
+    </div>
         
     </body>
 </html>
