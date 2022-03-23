@@ -296,4 +296,4 @@ def scrape(repo_name, unity_email, unity_password):
 
 	add_to_database(repo_name, unity_email, assets)
 	
-scrape("test_repo", "lainey.chylik@gmail.com", "Password22")
+# scrape("test_repo", "lainey.chylik@gmail.com", "Password22")
