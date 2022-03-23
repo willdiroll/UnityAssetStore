@@ -2482,3 +2482,14 @@ JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeE
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1647994455651	Marionette	INFO	Stopped listening on port 62084
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1647994458267	Marionette	INFO	Stopped listening on port 62328
+1647994461660	Marionette	INFO	Stopped listening on port 64092
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1647994464794	Marionette	INFO	Stopped listening on port 64960
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
