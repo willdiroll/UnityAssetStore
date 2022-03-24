@@ -28,7 +28,6 @@ os.environ["DJANGO_SETTINGS_MODULE"] = 'UAS.settings'
 
 sys.path.append('..')
 from main.models import *
-print("1")
 
 # Breaks down the given link to access the asset's title, ID, and corresponding categories
 def get_link_info(link):
@@ -295,5 +294,3 @@ def scrape(repo_name, unity_email, unity_password):
 	br.quit()
 
 	add_to_database(repo_name, unity_email, assets)
-	
-# scrape("test_repo", "lainey.chylik@gmail.com", "Password22")
