@@ -7,36 +7,55 @@ import warnings
 import datetime
 
 import os
+import sys
+
 import django
-os.environ["DJANGO_SETTINGS_MODULE"] = 'UAS.settings'
+
+from django.conf import settings
+if not settings.configured:
+	settings.configure(
+		DATABASE_ENGINE = 'django.db.backends.postgresql_psycopg2',
+		DATABASE_NAME = 'uas',
+		DATABASE_USER = 'lainey',
+		DATABASE_PASSWORD = 'test',
+		DATABASE_HOST = 'localhost',
+		DATABASE_PORT = '',
+	)
+
 django.setup()
+
+os.environ["DJANGO_SETTINGS_MODULE"] = 'UAS.settings'
+
+sys.path.append('..')
 from main.models import *
+print("1")
 
 # Breaks down the given link to access the asset's title, ID, and corresponding categories
 def get_link_info(link):
-
+	print("info")
     # Removes the part of link that is uniform throughout
-    trimmed_link = link[38:]
+	trimmed_link = link[38:]
 
     # Puts all of the categories at beginning of info array
-    info = trimmed_link.split('/')
-    title_id = info[len(info) - 1]
-    info.remove(title_id)
-    title_id = title_id.split('-')
-    id = title_id[len(title_id) - 1]
+	info = trimmed_link.split('/')
+	title_id = info[len(info) - 1]
+	info.remove(title_id)
+	title_id = title_id.split('-')
+	id = title_id[len(title_id) - 1]
 
-    # ID added to info[len(info) - 2]
-    info.append(id)
-    title_id.remove(id)
-    title = " ".join(title_id)
+	# ID added to info[len(info) - 2]
+	info.append(id)
+	title_id.remove(id)
+	title = " ".join(title_id)
 
-    # Title added to info[len(info) - 1]
-    info.append(title)
+	# Title added to info[len(info) - 1]
+	info.append(title)
 
-    return info
+	return info
 
 # Parses the string representation of dates (MON DAY, YEAR) into a Date object
 def parse_date(str_date):
+	print("date")
 	split = str_date.split(' ')
 	str_month = split[0]
 	day = split[1].replace(',', '')
@@ -60,16 +79,9 @@ def parse_date(str_date):
 
 	return datetime.date(int(year), int(month), int(day))
 
-def print_assets(assets):
-
-	for asset in assets:
-		print(asset)
-
-	print(len(assets))
-
 # Initializes the web driver settings used for scraping the web site
 def webdriver_settings():
-
+	print("webdriver")
 	# Set up a Firefox webdriver options
 	op = webdriver.FirefoxOptions()	# Must download the Firefox geckodriver from
 									# https://github.com/mozilla/geckodriver/releases
@@ -118,17 +130,65 @@ def webdriver_settings():
 
 	return op
 
+def add_to_database(repo_name, unity_email, assets):
+	print("add")
+	# Create new repo in database
+	new_repo = Repo.objects.create(
+		Key = Repo.objects.count() + 1,
+		Name = repo_name,
+		Identifier = unity_email)	
 
-def scrape():
+	# Loop thru each scraped asset
+	for a in assets:
 
+		# Create Asset
+		if not Asset.objects.filter(AID=a['id']).exists():
+			# If asset doesn't exist yet, add it
+			asset = Asset.objects.create(
+				AID = a['id'],
+				AssetName = a['title'],
+				AssetLink = a['link'],
+				LastUpdated = a['last updated'],
+				VersionNum = a['version'],
+				ImgLink = a['image'])
+		else:
+			# Else, retrieve existing asset
+			asset = Asset.objects.get(AID=a['id'])
+
+		# Add Asset -> Repo
+		asset.Repos.add(new_repo) 
+
+		# Add Categories -> Asset
+		for c in a['categories']:
+			if not Category.objects.filter(CategoryName=c).exists():
+				# If category doesn't exist yet, add it
+				category = Category.objects.create(CategoryName=c)
+			else:
+				category = Category.objects.get(CategoryName=c)
+			category.Assets.add(asset)
+
+		# Add Labels -> Asset
+		for l in a['labels']:
+			if not Label.objects.filter(LabelName=l).exists():
+				# If category doesn't exist yet, add it
+				label = Label.objects.create(LabelName=l)
+			else:
+				label = Label.objects.get(LabelName=l)
+			label.Assets.add(asset)
+
+
+def scrape(repo_name, unity_email, unity_password):
+	print("scrape")
 	# Web driver
 	op = webdriver_settings()
 	br = webdriver.Firefox(options = op)
 	wait = WebDriverWait(br, 5)
 
+	"""
 	# User info
 	EMAIL = "lainey.chylik@gmail.com"
 	PASSWORD = "Password22"
+	"""
 
 	# Navigate to the unity Asset Store login page
 	URL = 'https://assetstore.unity.com/account/assets'
@@ -141,8 +201,8 @@ def scrape():
 	login_button = br.find_element(By.NAME, 'commit')
 
 	# Log In
-	email_field.send_keys(EMAIL)
-	password_field.send_keys(PASSWORD)
+	email_field.send_keys(unity_email)
+	password_field.send_keys(unity_password)
 	login_button.click()
 
 	# Entered the 'My Asset Page'
@@ -208,19 +268,10 @@ def scrape():
 				'labels' : label_list,
 				'link' : link,
 				'version' : version_num,
-				'last updated' : str_last_updated,
+				'last updated' : last_updated,
 				'image' : img } ) 
 
-			# Add the asset into the Django database
-			Asset.objects.create(
-				AID = asset_id,
-				AssetName = title,
-				AssetLink = link,
-				LastUpdated = last_updated,
-				VersionNum = version_num,
-				ImgLink = img,
-				RepoKey = Repo.objects.get(RepoKey = 1)) 	# This line: TESTING PURPOSES
-															# Must change into the current user's repo in deployed app
+			
 
 			# Close asset window
 			br.find_element(By.CLASS_NAME, '_1VOoF').click()
@@ -243,7 +294,6 @@ def scrape():
 	# Close the browser
 	br.quit()
 
-	# Print list of assets and corresponding data
-	print_assets(assets)
-
-scrape()
+	add_to_database(repo_name, unity_email, assets)
+	
+# scrape("test_repo", "lainey.chylik@gmail.com", "Password22")

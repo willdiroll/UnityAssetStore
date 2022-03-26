@@ -4,11 +4,16 @@
     </head>
     <body>
         <h1>Create Page</h1>    
-        </br>
-        Input email to associate with repository:
-        <input type="text" id="create_email" name="create_email"></br></br>
-        Input name of repository:
-        <input type="text" id="create_name" name="create_name"><br><br>
-        <input type="button" id="new_repo" name="new_repo" value="Start" onclick="location.href = 'http://127.0.0.1:8000/home'">
+        <form method="post" action="/home/">
+            </br>
+            Input email of your Unity Asset Store account:
+            <input type="email" id="create_email" name="create_email"></br></br>
+            Input password of you Unity Asset Store account:
+            <input type="password" id="create_password" name="create_password"></br></br>
+            Input name of repository you want to create:
+            <input type="text" id="create_name" name="create_name"><br><br>
+            {% csrf_token %}
+            <button type="submit" name="create_repo">Create</button>
+        </form>
     </body>
 </html>
