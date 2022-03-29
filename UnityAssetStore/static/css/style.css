@@ -1,3 +1,56 @@
-body{
-    background-color: aqua;
+.header {
+    padding: 25px;
+    text-align: center;
+    background: #99c2ff;
+    color: black;
+    font-size: 50 px;
+    margin: 0;     
 }
+
+.leavebutton{
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    position: absolute;
+    top: 10;
+    right: 10;
+    float: right;
+}
+
+.leavebutton:hover{
+    background-color: grey;
+    color: black;
+}
+
+.assets{
+    float: left; 
+}
+
+.all_filters { 
+    border:2px solid #000000; 
+    margin-right: 20px;
+    margin-left: 20px;
+    width:320px; 
+    height:auto; 
+    overflow-y: auto; 
+    float: right;
+}
+
+.filterbutton{
+
+}
+
+.filterbutton:hover{
+    
+}
+
+body{
+    background-color: white;
+    margin: 0;
+}
+

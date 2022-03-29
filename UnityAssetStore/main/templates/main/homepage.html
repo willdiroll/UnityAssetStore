@@ -3,17 +3,13 @@
     <head>
         <title>Unity Asset Store</title>
         <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
-        <style type="text/css">
-            .assets { float: left }
-            .filters { border:2px solid #000000; width:300px; height: 250px; overflow-y: scroll; margin: 0 auto; }
-            .all_filters { border:2px solid #000000; width:320px; height: 600px; overflow-y: scroll; float: right; }
-        </style>
     </head>
     <body>
-        <h1>Home/Assets Page</h1><br>
+        <div class="header">
+            <h1>Your Assets</h1><br>
         
-        <input type="button" name="leave" id="leave" value="Leave" onclick="location.href = 'http://127.0.0.1:8000/join'" style="float: right;">
-
+            <input class="leavebutton" type="button" name="leave" id="leave" value="Leave" onclick="location.href = 'http://127.0.0.1:8000/join'">
+        </div>
         <br>
 
         <table class="assets" border="1">
