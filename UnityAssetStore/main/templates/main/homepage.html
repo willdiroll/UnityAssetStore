@@ -6,24 +6,25 @@
     </head>
     <body>
         <div class="header">
-            <h1>Your Assets</h1><br>
-        
+            <span>
+                Your Assets
+            </span>
             <input class="leavebutton" type="button" name="leave" id="leave" value="Leave" onclick="location.href = 'http://127.0.0.1:8000/join'">
         </div>
         <br>
 
         <table class="assets" border="1">
-            <tr>
-                <th>Asset Name</th>
-                <th>Last Updated</th>
-                <th>Version Number</th>
-                <th>Image Preview</th>
-                <th>Repos</th>
-                <th>Categories</th>
-                <th>Labels</th>
+            <tr class="assetheader">
+                <th style="padding:5px;">Asset Name</th>
+                <th style="padding:5px;">Last Updated</th>
+                <th style="padding:5px;">Version Number</th>
+                <th style="padding:5px;">Image Preview</th>
+                <th style="padding:5px;">Repos</th>
+                <th style="padding:5px;">Categories</th>
+                <th style="padding:5px;">Labels</th>
             </tr>
             {% for asset in all_assets %}
-            <tr>
+            <tr style="text-align: center;">
                 <td><a href="{{asset.AssetLink}}">{{ asset.AssetName }}</a></td>
                 <td>{{ asset.LastUpdated }}</td>
                 <td>{{ asset.VersionNum }}</td>
@@ -73,8 +74,11 @@
                 {% endif %}
             {% endfor %}
             {% csrf_token %}
-            <button type="submit" name="filter_assets">Filter</button>
+            <div>
+                <button class="filterbutton" type="submit" name="filter_assets">Filter</button>
+            </div>
         </form>
+
     </div>
         
     </body>

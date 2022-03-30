@@ -1,5 +1,5 @@
 .header {
-    padding: 25px;
+    padding: 0px;
     text-align: center;
     background: #99c2ff;
     color: black;
@@ -7,8 +7,16 @@
     margin: 0;     
 }
 
+span{
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
 .leavebutton{
-    background-color: black; /* Green */
+    background-color: black;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -17,8 +25,8 @@
     display: inline;
     font-size: 16px;
     position: absolute;
-    top: 10;
-    right: 10;
+    top: 5;
+    right: 13;
     float: right;
 }
 
@@ -28,25 +36,43 @@
 }
 
 .assets{
-    float: left; 
+    float: left;
+    margin-left: 20px 
 }
 
 .all_filters { 
     border:2px solid #000000; 
     margin-right: 20px;
     margin-left: 20px;
-    width:320px; 
+    width:auto; 
     height:auto; 
+    display: inline-block;
     overflow-y: auto; 
-    float: right;
+    
+}
+
+.assetheader{
+    font-size:25px;
+    font-weight: bold;
 }
 
 .filterbutton{
-
+    background-color: #99c2ff;
+    color: black;
+    border: 0;
+    margin: 5px;
+    width: 260px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 20px;
+    float: right;
 }
 
 .filterbutton:hover{
-    
+    background-color: grey;
+    color: black;
 }
 
 body{
