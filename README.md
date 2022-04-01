@@ -4,16 +4,18 @@
 ## SET UP
 
 1. Set up Git
-		Go to https://git-scm.com/download/win to download/install latest build for Windows
-		Follow the installer default steps
+
+	Go to https://git-scm.com/download/win to download/install latest build for Windows
+	Follow the installer default steps
 		
 		Configure Git with your identity:
 		$ git config --global user.name "John Doe"
 		$ git config --global user.email johndoe@example.com
 	
 2. Install the Heroku CLI
-		Go to https://cli-assets.heroku.com/heroku-x64.exe to download/install latest build for Windows (x64)
-		Follow the installer default steps
+
+	Go to https://cli-assets.heroku.com/heroku-x64.exe to download/install latest build for Windows (x64)
+	Follow the installer default steps
 		
 		You should now be able to use the 'heroku' command on the command prompt (cmd.exe)
 		
@@ -21,7 +23,8 @@
 		$ heroku --version
 		
 3. Clone the app from Heroku
-		If you do not have a Heroku account, create one at https://signup.heroku.com/login
+
+	If you do not have a Heroku account, create one at https://signup.heroku.com/login
 		
 		Login to Heroku from Heroku CLI with
 		$ heroku login
@@ -34,27 +37,35 @@
 		You should now have a local copy of the app!
 		
 4. Install Python3
-		Go to https://www.python.org/downloads/windows/ to download/install latest build for Windows
-		- Recommended: Windows Installer (64-bit)
-		- On the installer wizard: check "Add Python 3.10 to PATH"
+
+	Go to https://www.python.org/downloads/windows/ to download/install latest build for Windows
+	- Recommended: Windows Installer (64-bit)
+	- On the installer wizard: check "Add Python 3.10 to PATH"
+
+			Verify your installation with 
+			$ python -V
 		
-		Verify your installation with 
-		$ python -V
+		
 		
 5. Install Python modules and Chrome files (Install these if you haven't already)
 	- Selenium:
-		- ` $ pip install selenium `	
+
+			$ pip install selenium
 	- Django:
-		- ` $ pip install django `
+
+			$ pip install django
 	- Django-Heroku:
-		- ` $ pip install django-heroku `
+
+			$ pip install django-heroku
 	- Google Chrome Browser:
-		- Go to https://www.google.com/chrome/
+
+			Go to https://www.google.com/chrome/
 	- Chromedriver
-		- Go to https://chromedriver.chromium.org/home
-		- Go to "latest stable release: " > "chromedriver_win32.zip"
-			- Unzip "chromedriver_win32.zip" into a directory that is easily accessible
-			- Add that directory to your PATH variable:
+
+			1. Go to https://chromedriver.chromium.org/home
+			2. Go to "latest stable release: " > "chromedriver_win32.zip"
+			3. Unzip "chromedriver_win32.zip" into a directory that is easily accessible
+			4. Add that directory to your PATH variable:
 				- Press WIN+S to launch Windows Search
 				- Type "environ..." and select "Edit the system environment variables"
 				- Select "Environment Variables..."
@@ -63,43 +74,38 @@
 				- Select "Browse..." and select the directory containing your "chromedriver.exe" file
 				
 6. Install Postgres
-	- Go to https://www.postgresql.org/download/windows/ to download/install latest build for Windows
-		- Select "Download the installer"
-		- Download the latest version for Windows x86-64
-		- Follow the instructions on the installer wizard
+
+		1. Go to https://www.postgresql.org/download/windows/ to download/install latest build for Windows
+		2. Select "Download the installer"
+		3. Download the latest version for Windows x86-64
+		4. Follow the instructions on the installer wizard
 			- Use any superuser password you'd like (** Remember this for next step)
 			- Use the default port number
-	 
+
 7. Create a Postgres Database and User
-		Press WIN+S to launch Windows Search
-		Search "psql" and select it to open the Postgresql Shell
-		
-		Click Enter for "Server", "Datebase", "Port", and "Username"
-		Enter the password you specified in Step 6.
-		
-		** You should now be in the psql shell
-		
-		Enter the following commands in the command prompt:
-		postgres=# CREATE DATABASE uas;
-		postgres=# CREATE USER lainey WITH PASSWORD 'test';
-		
-		** Use the variable names specified above. Do not use a different database name, user name, or password.
+
+
+		1. Press WIN+S to launch Windows Search
+		2. Search "psql" and select it to open the Postgresql Shell
+		3. Click Enter for "Server", "Datebase", "Port", and "Username"
+		4. Enter the password you specified in Step 6.
+			** You should now be in the psql shell
+		5. Now, enter the following commands in the command prompt:
+			postgres=# CREATE DATABASE uas;
+			postgres=# CREATE USER lainey WITH PASSWORD 'test';
+			** Use the variable names specified above. Do not use a different database name, user name, or password.
 		
 8. Migrate tables/relations to the Database
-		In a command prompt:
-		Navigate to your cloned Heroku app repository (roly-united)
-		
-		Navigate to roly-united/UnityAssetStore/main/
-		Edit scraper.py:
-		Scroll to the bottom and make sure the call to "scrape()" is commented out
-			
-		e.g. ' #scrape("test_repo", "email@gmail.com", "password") '
-		NOT  ' scrape("test_repo", "email@gmail.com", "password") '
-		
-		Navigate to roly-united/UnityAssetStore
-		Migrate the relations with:
-		$ python manage.py makemigrations
-		$ python manage.py migrate
+
+		1. Navigate to roly-united/UnityAssetStore/main/
+		2. Edit scraper.py:
+			Scroll to the bottom and make sure the call to "scrape()" is commented out
+				e.g. ' #scrape("test_repo", "email@gmail.com", "password") '
+				NOT  ' scrape("test_repo", "email@gmail.com", "password") '
+		3. Navigate to roly-united/UnityAssetStore
+		4. Migrate the relations with:
+			$ python manage.py makemigrations
+			$ python manage.py migrate
 		
 		Should output:
 		$ Operations to perform:
@@ -131,14 +137,14 @@
 ## POPULATE THE DATABASE WITH THE WEB SCRAPER
 Navigate to roly-united/UnityAssetStore/main/
 	
-	Edit scraper.py:
+	1. Edit scraper.py:
 		- Scroll to the bottom and make sure the call to "scrape()" is NOT commented out
 			e.g. scrape("test_repo", "email@gmail.com", "password")
 			NOT  #scrape("test_repo", "email@gmail.com", "password")
 		  
 		- Replace the information in scrape() with your Unity Asset Store login information
 		  
-	Run the scraper from the command prompt:
+	2. Run the scraper from the command prompt:
 		$ python scraper.py
 		
 	Expected output:
