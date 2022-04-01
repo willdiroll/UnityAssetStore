@@ -2580,3 +2580,95 @@ console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkErr
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 >>>>>>> 4dad132492f7d9a2f174bbd2f988bc1e3de442f8
+1648834888021	geckodriver	INFO	Listening on 127.0.0.1:57890
+1648834891082	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57891" "-no-remote" "-profile" "C:\\Users\\tccin\\AppData\\Local\\Temp\\rust_mozprofilelmpXJC"
+1648834891717	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tccin\\AppData\\Local\\Temp\\rust_mozprofilelmpXJC\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57891/devtools/browser/c4eaa6e3-77dd-4e72-ad01-c2d237f725bc
+1648834893528	Marionette	INFO	Listening on port 57896
+1648834893770	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+1648834912744	Marionette	INFO	Stopped listening on port 57896
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1648834943597	geckodriver	INFO	Listening on 127.0.0.1:58060
+1648834946664	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58061" "-no-remote" "-profile" "C:\\Users\\tccin\\AppData\\Local\\Temp\\rust_mozprofiledRXRrd"
+1648834946925	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tccin\\AppData\\Local\\Temp\\rust_mozprofiledRXRrd\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58061/devtools/browser/c66997e5-09e5-4782-aaa1-70e7afc79c73
+1648834948499	Marionette	INFO	Listening on port 58066
+1648834948720	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1648834969176	Marionette	INFO	Stopped listening on port 58066
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1648834975461	geckodriver	INFO	Listening on 127.0.0.1:58206
+1648834978526	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58207" "-no-remote" "-profile" "C:\\Users\\tccin\\AppData\\Local\\Temp\\rust_mozprofilePXXPew"
+1648834978794	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tccin\\AppData\\Local\\Temp\\rust_mozprofilePXXPew\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58207/devtools/browser/f5f2ce88-e4a3-4d9b-8747-e974efeca122
+1648834980374	Marionette	INFO	Listening on port 58212
+1648834980583	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1648835005332	Marionette	INFO	Stopped listening on port 58212
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1648837185833	geckodriver	INFO	Listening on 127.0.0.1:63466
+1648837188895	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "63467" "-no-remote" "-profile" "C:\\Users\\tccin\\AppData\\Local\\Temp\\rust_mozprofilehHbccv"
+*** You are running in headless mode.
+1648837189238	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tccin\\AppData\\Local\\Temp\\rust_mozprofilehHbccv\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63467/devtools/browser/a66e849d-1dad-478f-b075-738edfcd2968
+1648837190257	Marionette	INFO	Listening on port 63475
+1648837190436	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1648837194547	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1648837205810	Marionette	INFO	Stopped listening on port 63475
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1648843880798	geckodriver	INFO	Listening on 127.0.0.1:60675
+1648843883857	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "60676" "-no-remote" "-profile" "C:\\Users\\tccin\\AppData\\Local\\Temp\\rust_mozprofile71lu4g"
+*** You are running in headless mode.
+1648843884168	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tccin\\AppData\\Local\\Temp\\rust_mozprofile71lu4g\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60676/devtools/browser/2e68f0a7-f897-4c42-bbfa-7eaa29f9e3d9
+1648843885166	Marionette	INFO	Listening on port 60687
+1648843885403	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1648844024679	geckodriver	INFO	Listening on 127.0.0.1:60895
+1648844027733	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "60896" "-no-remote" "-profile" "C:\\Users\\tccin\\AppData\\Local\\Temp\\rust_mozprofileBen1Wz"
+*** You are running in headless mode.
+1648844028033	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\tccin\\AppData\\Local\\Temp\\rust_mozprofileBen1Wz\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60896/devtools/browser/9f234775-d2cb-4fd5-83c2-148af087aef4
+1648844029201	Marionette	INFO	Listening on port 60903
+1648844029279	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://id.unity.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1648844033686	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1648844045474	Marionette	INFO	Stopped listening on port 60903
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

@@ -18,6 +18,7 @@ def home(response):
     elif response.method == 'POST' and 'filter_assets' in response.POST:
         filter_categories = response.POST.getlist('categories[]')
         filter_labels = response.POST.getlist('labels[]')
+        and_toggle = response.POST.get('and_toggle')
 
     all_assets = Asset.objects.all()
     all_labels = Label.objects.all()
@@ -32,16 +33,40 @@ def home(response):
 
     if len(filter_categories) > 0 or len(filter_labels) > 0:
         filter_assets = []
+        filter_assets_categories = []
+        filter_assets_labels = []
+        first_run = 1
+        
         for c in filter_categories:
             query_set = Category.objects.get(CategoryName = c).Assets.all()
             for ele in query_set:
-                if not ele in filter_assets: filter_assets.append(ele)
+                if and_toggle:
+                    if first_run:
+                        filter_assets_categories.append(ele)
+                    else:
+                        filter_assets_categories = [x for x in query_set if x in filter_assets_categories]
+                else:
+                    if not ele in filter_assets_categories: filter_assets_categories.append(ele)
+            first_run = 0
 
         for l in filter_labels:
             query_set = Label.objects.get(LabelName = l).Assets.all()
             for ele in query_set:
-                if not ele in filter_assets: filter_assets.append(ele)
+                if and_toggle:
+                    if first_run:
+                        filter_assets_labels.append(ele)
+                    else:
+                        filter_assets_labels = [x for x in query_set if x in filter_assets_labels]
+                else:
+                    if not ele in filter_assets_labels: filter_assets_labels.append(ele)
+            first_run = 0
 
+        if len(filter_categories) > 0 and len(filter_labels) > 0:
+            for ele in filter_assets_categories:
+                if ele in filter_assets_labels:
+                    filter_assets.append(ele)
+        else:
+            filter_assets = filter_assets_categories + filter_assets_labels
         all_assets = filter_assets
 
     return render(response, "main/homepage.html", {

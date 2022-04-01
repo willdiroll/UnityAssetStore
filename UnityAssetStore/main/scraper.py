@@ -87,7 +87,7 @@ def webdriver_settings():
 									# https://github.com/mozilla/geckodriver/releases
 									# Then, move geckodriver into a $PATH directory
 									#			e.g. usr/local/bin
-	op.headless = False		# Can change this to True to avoid opening FireFox window
+	op.headless = True		# Can change this to True to avoid opening FireFox window
 
 	# Miscellaneous settings to make the webdriver run a bit faster
 	warnings.filterwarnings("ignore", category=DeprecationWarning) 

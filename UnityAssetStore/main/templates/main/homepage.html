@@ -59,6 +59,7 @@
 
     <div class="all_filters">
         <form method="post" action="/home/">
+			Toggle for "and": <input type="checkbox" name="and_toggle" /> <br />
             Categories: <br />
             {% for category in all_categories %}
                 {% if category in filter_categories %}
