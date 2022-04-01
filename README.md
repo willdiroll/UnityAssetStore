@@ -1,112 +1,107 @@
 # HOW TO USE (Windows):
 
+
 ## SET UP
-### You should only need to follow the SET UP steps one time!
+
 1. Set up Git
-	Go to https://git-scm.com/download/win to download/install latest build for Windows
-	Follow the installer default steps
-	
-	Configure Git with your identity:
-		>
-		```
+		Go to https://git-scm.com/download/win to download/install latest build for Windows
+		Follow the installer default steps
+		
+		Configure Git with your identity:
 		$ git config --global user.name "John Doe"
 		$ git config --global user.email johndoe@example.com
-		```
 	
 2. Install the Heroku CLI
-	Go to https://cli-assets.heroku.com/heroku-x64.exe to download/install latest build for Windows (x64)
-	Follow the installer default steps
-	
-	You should now be able to use the 'heroku' command on the command prompt (cmd.exe)
-	
-	Verify your installation with
-		` $ heroku --version `
-	
-3. Clone the app from Heroku
-	If you do not have a Heroku account, create one at https://signup.heroku.com/login
-	
-	Login to Heroku from Heroku CLI with
-		` $ heroku login `
-	
-	Navigate to a directory you would like to place the app in, then use
-		` $ heroku git:clone -a roly-united `
-	
-	** NOTE: We will need to add your Heroku account as a Collaborator on our app before you can clone it!
-	
-	You should now have a local copy of the app!
-	
-4. Install Python3
-	Go to https://www.python.org/downloads/windows/ to download/install latest build for Windows
-	- Recommended: Windows Installer (64-bit)
-	- On the installer wizard: check "Add Python 3.10 to PATH"
-	
-	Verify your installation with 
-		` $ python -V `
-	
-5. Install Python modules and Chrome files (Install these if you haven't already)
-	- Selenium
-		` $ pip install selenium `
-	- Django
-		` $ pip install django `
-	- Django-Heroku
-		` $ pip install django-heroku `
-	- Google Chrome Browser
-		Go to https://www.google.com/chrome/
-	- Chromedriver
-		Go to https://chromedriver.chromium.org/home
-		Do to "latest stable release: " > "chromedriver_win32.zip"
+		Go to https://cli-assets.heroku.com/heroku-x64.exe to download/install latest build for Windows (x64)
+		Follow the installer default steps
 		
-		Unzip "chromedriver_win32.zip" into a directory that is easily accessible
-		Add that directory to your PATH variable:
-			- Press WIN+S to launch Windows Search
-			- Type "environ..." and select "Edit the system environment variables"
-			- Select "Environment Variables..."
-			- Select the "Path" variable in the top menu
-			- Select "New" (**important... if you don't select this, it will replace an entry)
-			- Select "Browse..." and select the directory containing your "chromedriver.exe" file
-			
+		You should now be able to use the 'heroku' command on the command prompt (cmd.exe)
+		
+		Verify your installation with
+		$ heroku --version
+		
+3. Clone the app from Heroku
+		If you do not have a Heroku account, create one at https://signup.heroku.com/login
+		
+		Login to Heroku from Heroku CLI with
+		$ heroku login
+		
+		Navigate to a directory you would like to place the app in, then use
+		$ heroku git:clone -a roly-united
+		
+		** NOTE: We will need to add your Heroku account as a Collaborator on our app before you can clone it!
+		
+		You should now have a local copy of the app!
+		
+4. Install Python3
+		Go to https://www.python.org/downloads/windows/ to download/install latest build for Windows
+		- Recommended: Windows Installer (64-bit)
+		- On the installer wizard: check "Add Python 3.10 to PATH"
+		
+		Verify your installation with 
+		$ python -V
+		
+5. Install Python modules and Chrome files (Install these if you haven't already)
+	- Selenium:
+		- ` $ pip install selenium `	
+	- Django:
+		- ` $ pip install django `
+	- Django-Heroku:
+		- ` $ pip install django-heroku `
+	- Google Chrome Browser:
+		- Go to https://www.google.com/chrome/
+	- Chromedriver
+		- Go to https://chromedriver.chromium.org/home
+		- Go to "latest stable release: " > "chromedriver_win32.zip"
+			- Unzip "chromedriver_win32.zip" into a directory that is easily accessible
+			- Add that directory to your PATH variable:
+				- Press WIN+S to launch Windows Search
+				- Type "environ..." and select "Edit the system environment variables"
+				- Select "Environment Variables..."
+				- Select the "Path" variable in the top menu
+				- Select "New" (**important... if you don't select this, it will replace an entry)
+				- Select "Browse..." and select the directory containing your "chromedriver.exe" file
+				
 6. Install Postgres
-	Go to https://www.postgresql.org/download/windows/ to download/install latest build for Windows
-	- Select "Download the installer"
-	- Download the latest version for Windows x86-64
-	- Follow the instructions on the installer wizard
-		- Use any superuser password you'd like (** Remember this for next step)
-		- Use the default port number
- 
+	- Go to https://www.postgresql.org/download/windows/ to download/install latest build for Windows
+		- Select "Download the installer"
+		- Download the latest version for Windows x86-64
+		- Follow the instructions on the installer wizard
+			- Use any superuser password you'd like (** Remember this for next step)
+			- Use the default port number
+	 
 7. Create a Postgres Database and User
-	Press WIN+S to launch Windows Search
-	Search "psql" and select it to open the Postgresql Shell
-	
-	Click Enter for "Server", "Datebase", "Port", and "Username"
-	Enter the password you specified in Step 6.
-	You should now be in the psql shell
-	
-	Enter the following commands in the command prompt:
-		```
+		Press WIN+S to launch Windows Search
+		Search "psql" and select it to open the Postgresql Shell
+		
+		Click Enter for "Server", "Datebase", "Port", and "Username"
+		Enter the password you specified in Step 6.
+		
+		** You should now be in the psql shell
+		
+		Enter the following commands in the command prompt:
 		postgres=# CREATE DATABASE uas;
 		postgres=# CREATE USER lainey WITH PASSWORD 'test';
-		```
-	** Use the variable names specified above. Do not use a different database name, user name, or password.
-	
+		
+		** Use the variable names specified above. Do not use a different database name, user name, or password.
+		
 8. Migrate tables/relations to the Database
-	In a command prompt:
-	Navigate to your cloned Heroku app repository (roly-united)
-	
-	Navigate to roly-united/UnityAssetStore/main/
-	Edit scraper.py:
-		- Scroll to the bottom and make sure the call to "scrape()" is commented out
-			e.g. ' #scrape("test_repo", "email@gmail.com", "password") '
-			NOT  ' scrape("test_repo", "email@gmail.com", "password") '
-	
-	Navigate to roly-united/UnityAssetStore
-	Migrate the relations with:
-		```
+		In a command prompt:
+		Navigate to your cloned Heroku app repository (roly-united)
+		
+		Navigate to roly-united/UnityAssetStore/main/
+		Edit scraper.py:
+		Scroll to the bottom and make sure the call to "scrape()" is commented out
+			
+		e.g. ' #scrape("test_repo", "email@gmail.com", "password") '
+		NOT  ' scrape("test_repo", "email@gmail.com", "password") '
+		
+		Navigate to roly-united/UnityAssetStore
+		Migrate the relations with:
 		$ python manage.py makemigrations
 		$ python manage.py migrate
-		```
-	
-	Should output:
-		```
+		
+		Should output:
 		$ Operations to perform:
 		$ 	Apply all migrations: admin, auth, contenttypes, main, sessions
 		$ Running migrations:
@@ -130,25 +125,23 @@
 		$	Applying main.0001_initial... OK
 		$	Applying main.0002_alter_asset_assetlink_alter_asset_assetname_and_more... OK
 		$	Applying sessions.0001_initial... OK
-		```
-	
-	**You should now be prepared to use the app!
+		
+		**You should now be prepared to use the app!
 	
 ## POPULATE THE DATABASE WITH THE WEB SCRAPER
 Navigate to roly-united/UnityAssetStore/main/
 	
 	Edit scraper.py:
 		- Scroll to the bottom and make sure the call to "scrape()" is NOT commented out
-			e.g. ` scrape("test_repo", "email@gmail.com", "password") `
-			NOT  ` #scrape("test_repo", "email@gmail.com", "password") `
+			e.g. scrape("test_repo", "email@gmail.com", "password")
+			NOT  #scrape("test_repo", "email@gmail.com", "password")
 		  
 		- Replace the information in scrape() with your Unity Asset Store login information
 		  
 	Run the scraper from the command prompt:
-		` $ python scraper.py `
+		$ python scraper.py
 		
 	Expected output:
-		```
 		$ running scraper.py...
 		$ Start scraping!
 		$
@@ -169,41 +162,43 @@ Navigate to roly-united/UnityAssetStore/main/
 		$ added assets:  3
 		...
 		$ Finished!
-		```
 	
 ## CHECK WHAT POPULATED INTO THE DATABASE (OPTIONAL)
-	In roly-united/UnityAssetStore
+In roly-united/UnityAssetStore
+
 	Create a superuser for the locally-hosted website:
-		` $ python manage.py createsuperuser `
+	$ python manage.py createsuperuser
 		
-		Follow the commandline prompts to create super user credentials
+	Now follow the commandline prompts to create super user credentials
 	
-	In roly-united/UnityAssetStore/main
+In roly-united/UnityAssetStore/main
+
 	Comment out scrape() call:
-		In scraper.py, scroll to the bottom and make sure the call to "scrape()" is commented out
-			e.g. ` #scrape("test_repo", "email@gmail.com", "password") `
-			NOT  ` scrape("test_repo", "email@gmail.com", "password") `
+	In scraper.py, scroll to the bottom and make sure the call to "scrape()" is commented out
+	
+	e.g. #scrape("test_repo", "email@gmail.com", "password")
+	NOT  scrape("test_repo", "email@gmail.com", "password")
 			
-	In roly-united/UnityAssetStore
+In roly-united/UnityAssetStore
+
 	Run localhost server:
-		` $ python manage.py runserver `
+	$ python manage.py runserver
 		
-	In a browser, go to the localhost URL (by default, http://127.0.0.1:8000/)
+In a browser, go to the localhost URL (by default, http://127.0.0.1:8000/)
 	Go to /admin/ page (e.g. http://127.0.0.1:8000/admin/)
 	
-	From here, you can view all the assets added in "Assets" and delete any you choose. 
+From here, you can view all the assets added in "Assets" and delete any you choose. 
 		  
 
 ## CREATE A DATABASE DUMP FILE:
 Navigate to a directory you would like to place the dump file in.
 Run the below command to generate a database dump file:
-	` $ pg_dump -Fc --no-acl --no-owner -h <HOST> -U <USER> -d <DB_NAME> -f uas_db.dump `
+	
+	$ pg_dump -Fc --no-acl --no-owner -h <HOST> -U <USER> -d <DB_NAME> -f uas_db.dump
 	
 	For our app, this is the literal command:
-	```
 	$ pg_dump -Fc --no-acl --no-owner -h localhost -U lainey -d uas -f uas_db.dump 
 	$ password: test
-	```
     			
 ## IMPORT DUMP FILE INTO HEROKU APP:
 1. Create/Login to your AWS Account
@@ -211,7 +206,11 @@ Run the below command to generate a database dump file:
 3. Upload your dump file into the bucket
 4. Select the dump file in the bucket, then select "Actions" > "Share with a presigned URL"
 5. Run the below command in the local directory cloned from heroku
-	` $ heroku pg:backups:restore --app <APP_NAME> --confirm <APP_NAME> "<GENERATED_URL>" `
 	
-	For our app, this is the literal command:
-	` $ heroku pg:backups:restore --app roly-united --confirm roly-united "<GENERATED_URL>" `
+		$ heroku pg:backups:restore --app <APP_NAME> --confirm <APP_NAME> "<GENERATED_URL>"
+	
+		For our app, this is the literal command:
+		$ heroku pg:backups:restore --app roly-united --confirm roly-united "<GENERATED_URL>"
+	
+## ACCESS THE REMOTELY HOSTED APP
+Go to https://roly-united.herokuapp.com/
