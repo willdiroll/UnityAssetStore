@@ -7,10 +7,10 @@
 	Follow the installer default steps
 	
 	Configure Git with your identity:
-		'''
+		```
 		$ git config --global user.name "John Doe"
 		$ git config --global user.email johndoe@example.com
-		'''
+		```
 	
 2. Install the Heroku CLI
 	Go to https://cli-assets.heroku.com/heroku-x64.exe to download/install latest build for Windows (x64)
@@ -19,18 +19,18 @@
 	You should now be able to use the 'heroku' command on the command prompt (cmd.exe)
 	
 	Verify your installation with
-		' $ heroku --version '
+		` $ heroku --version `
 	
 3. Clone the app from Heroku
 	If you do not have a Heroku account, create one at https://signup.heroku.com/login
 	
 	Login to Heroku from Heroku CLI with
-		' $ heroku login '
+		` $ heroku login `
 	
 	Navigate to a directory you would like to place the app in, then use
-		' $ heroku git:clone -a roly-united '
+		` $ heroku git:clone -a roly-united `
 	
-	## NOTE: We will need to add your Heroku account as a Collaborator on our app before you can clone it!
+	** NOTE: We will need to add your Heroku account as a Collaborator on our app before you can clone it!
 	
 	You should now have a local copy of the app!
 	
@@ -40,15 +40,15 @@
 	- On the installer wizard: check "Add Python 3.10 to PATH"
 	
 	Verify your installation with 
-		' $ python -V '
+		` $ python -V `
 	
 5. Install Python modules and Chrome files (Install these if you haven't already)
 	- Selenium
-		' $ pip install selenium '
+		` $ pip install selenium `
 	- Django
-		' $ pip install django '
+		` $ pip install django `
 	- Django-Heroku
-		' $ pip install django-heroku '
+		` $ pip install django-heroku `
 	- Google Chrome Browser
 		Go to https://www.google.com/chrome/
 	- Chromedriver
@@ -81,10 +81,10 @@
 	You should now be in the psql shell
 	
 	Enter the following commands in the command prompt:
-		'''
+		```
 		postgres=# CREATE DATABASE uas;
 		postgres=# CREATE USER lainey WITH PASSWORD 'test';
-		'''
+		```
 	** Use the variable names specified above. Do not use a different database name, user name, or password.
 	
 8. Migrate tables/relations to the Database
@@ -99,13 +99,13 @@
 	
 	Navigate to roly-united/UnityAssetStore
 	Migrate the relations with:
-		'''
+		```
 		$ python manage.py makemigrations
 		$ python manage.py migrate
-		'''
+		```
 	
 	Should output:
-		'''
+		```
 		$ Operations to perform:
 		$ 	Apply all migrations: admin, auth, contenttypes, main, sessions
 		$ Running migrations:
@@ -129,7 +129,7 @@
 		$	Applying main.0001_initial... OK
 		$	Applying main.0002_alter_asset_assetlink_alter_asset_assetname_and_more... OK
 		$	Applying sessions.0001_initial... OK
-		'''
+		```
 	
 	**You should now be prepared to use the app!
 	
@@ -138,16 +138,16 @@ Navigate to roly-united/UnityAssetStore/main/
 	
 	Edit scraper.py:
 		- Scroll to the bottom and make sure the call to "scrape()" is NOT commented out
-			e.g. ' scrape("test_repo", "email@gmail.com", "password") '
-			NOT  ' #scrape("test_repo", "email@gmail.com", "password") '
+			e.g. ` scrape("test_repo", "email@gmail.com", "password") `
+			NOT  ` #scrape("test_repo", "email@gmail.com", "password") `
 		  
 		- Replace the information in scrape() with your Unity Asset Store login information
 		  
 	Run the scraper from the command prompt:
-		' $ python scraper.py '
+		` $ python scraper.py `
 		
 	Expected output:
-		'''
+		```
 		$ running scraper.py...
 		$ Start scraping!
 		$
@@ -168,24 +168,24 @@ Navigate to roly-united/UnityAssetStore/main/
 		$ added assets:  3
 		...
 		$ Finished!
-		'''	
+		```
 	
 ## CHECK WHAT POPULATED INTO THE DATABASE (OPTIONAL)
 	In roly-united/UnityAssetStore
 	Create a superuser for the locally-hosted website:
-		' $ python manage.py createsuperuser ' 
+		` $ python manage.py createsuperuser `
 		
 		Follow the commandline prompts to create super user credentials
 	
 	In roly-united/UnityAssetStore/main
 	Comment out scrape() call:
 		In scraper.py, scroll to the bottom and make sure the call to "scrape()" is commented out
-			e.g. ' #scrape("test_repo", "email@gmail.com", "password") '
-			NOT  ' scrape("test_repo", "email@gmail.com", "password") '
+			e.g. ` #scrape("test_repo", "email@gmail.com", "password") `
+			NOT  ` scrape("test_repo", "email@gmail.com", "password") `
 			
 	In roly-united/UnityAssetStore
 	Run localhost server:
-		' $ python manage.py runserver '
+		` $ python manage.py runserver `
 		
 	In a browser, go to the localhost URL (by default, http://127.0.0.1:8000/)
 	Go to /admin/ page (e.g. http://127.0.0.1:8000/admin/)
@@ -196,11 +196,13 @@ Navigate to roly-united/UnityAssetStore/main/
 ## CREATE A DATABASE DUMP FILE:
 Navigate to a directory you would like to place the dump file in.
 Run the below command to generate a database dump file:
-	' $ pg_dump -Fc --no-acl --no-owner -h <HOST> -U <USER> -d <DB_NAME> -f uas_db.dump '
+	` $ pg_dump -Fc --no-acl --no-owner -h <HOST> -U <USER> -d <DB_NAME> -f uas_db.dump `
 	
 	For our app, this is the literal command:
-	' $ pg_dump -Fc --no-acl --no-owner -h localhost -U lainey -d uas -f uas_db.dump '
-	' $ password: test '
+	```
+	$ pg_dump -Fc --no-acl --no-owner -h localhost -U lainey -d uas -f uas_db.dump 
+	$ password: test
+	```
     			
 ## IMPORT DUMP FILE INTO HEROKU APP:
 1. Create/Login to your AWS Account
@@ -208,7 +210,7 @@ Run the below command to generate a database dump file:
 3. Upload your dump file into the bucket
 4. Select the dump file in the bucket, then select "Actions" > "Share with a presigned URL"
 5. Run the below command in the local directory cloned from heroku
-	' $ heroku pg:backups:restore --app <APP_NAME> --confirm <APP_NAME> "<GENERATED_URL>" '
+	` $ heroku pg:backups:restore --app <APP_NAME> --confirm <APP_NAME> "<GENERATED_URL>" `
 	
 	For our app, this is the literal command:
-	' $ heroku pg:backups:restore --app roly-united --confirm roly-united "<GENERATED_URL>" '
+	` $ heroku pg:backups:restore --app roly-united --confirm roly-united "<GENERATED_URL>" `
