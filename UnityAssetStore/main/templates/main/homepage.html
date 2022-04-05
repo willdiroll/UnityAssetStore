@@ -14,17 +14,17 @@
         <br>
 
         <table class="assets" border="1">
-            <tr class="assetheader">
-                <th style="padding:5px;">Asset Name</th>
-                <th style="padding:5px;">Last Updated</th>
-                <th style="padding:5px;">Version Number</th>
-                <th style="padding:5px;">Image Preview</th>
-                <th style="padding:5px;">Repos</th>
-                <th style="padding:5px;">Categories</th>
-                <th style="padding:5px;">Labels</th>
+            <tr>
+                <th class="assetheader">Asset Name</th>
+                <th class="assetheader">Last Updated</th>
+                <th class="assetheader">Version Number</th>
+                <th class="assetheader">Image Preview</th>
+                <th class="assetheader">Repos</th>
+                <th class="assetheader">Categories</th>
+                <th class="assetheader">Labels</th>
             </tr>
             {% for asset in all_assets %}
-            <tr style="text-align: center;">
+            <tr class="assettext">
                 <td><a href="{{asset.AssetLink}}">{{ asset.AssetName }}</a></td>
                 <td>{{ asset.LastUpdated }}</td>
                 <td>{{ asset.VersionNum }}</td>
@@ -54,29 +54,31 @@
             {% endfor %}
     </table>
 
-    <div class="all_filters">
-        <form method="post" action="/home/">
-            Categories: <br />
-            {% for category in all_categories %}
-                {% if category in filter_categories %}
-                    <input type="checkbox" name="categories[]" checked="checked" value={{ category }} /> {{ category }} <br />
-                {% else %}
-                    <input type="checkbox" name="categories[]" value={{ category }} /> {{ category }} <br />
-                {% endif %}
-            {% endfor %}
-            <br />
-            Labels: <br />
-            {% for label in all_labels %}
-                {% if label in filter_labels %}
-                    <input type="checkbox" name="labels[]" checked="checked" value={{ label }} /> {{ label }} <br />
-                {% else %}
-                    <input type="checkbox" name="labels[]" value={{ label }} /> {{ label }} <br />
-                {% endif %}
-            {% endfor %}
-            {% csrf_token %}
-            <div>
-                <button class="filterbutton" type="submit" name="filter_assets">Filter</button>
-            </div>
+    <div class="filters">
+        <div class="all_filters">
+            <form method="post" action="/home/" class="filtertext">
+                Categories: <br />
+                {% for category in all_categories %}
+                    {% if category in filter_categories %}
+                        <input class ="checkbox" type="checkbox" name="categories[]" checked="checked" value={{ category }} /> {{ category }} <br />
+                    {% else %}
+                        <input class="checkbox" type="checkbox" name="categories[]" value={{ category }} /> {{ category }} <br />
+                    {% endif %}
+                {% endfor %}
+                <br />
+                Labels: <br />
+                {% for label in all_labels %}
+                    {% if label in filter_labels %}
+                        <input class="checkbox" type="checkbox" name="labels[]" checked="checked" value={{ label }} /> {{ label }} <br />
+                    {% else %}
+                        <input class="checkbox" type="checkbox" name="labels[]" value={{ label }} /> {{ label }} <br />
+                    {% endif %}
+                {% endfor %}
+                {% csrf_token %}
+        </div>
+        <div>
+            <button class="filterbutton" type="submit" name="filter_assets">Filter</button>
+        </div>
         </form>
 
     </div>

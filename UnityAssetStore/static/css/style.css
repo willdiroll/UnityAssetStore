@@ -36,6 +36,8 @@ span{
 }
 
 .assets{
+    table-layout: fixed;
+    width: 75%;
     float: left;
     margin-left: 20px 
 }
@@ -44,23 +46,44 @@ span{
     border:2px solid #000000; 
     margin-right: 20px;
     margin-left: 20px;
-    width:auto; 
+    width:260px; 
     height:auto; 
     display: inline-block;
-    overflow-y: auto; 
-    
+    overflow-y: scroll; 
+}
+
+input.checkbox{
+    width:20px;
+    height: 20px;
 }
 
 .assetheader{
     font-size:25px;
     font-weight: bold;
+    padding: 5px;
+}
+
+.filters{
+    position: absolute;
+    top: 77;
+    right: 10;
+}
+
+.filtertext{
+    margin: 5px 0px 5px 10px;
+    font-size: 20px;
+}
+
+.assettext{
+    text-align: center;
+    font-size: 16px;
 }
 
 .filterbutton{
     background-color: #99c2ff;
     color: black;
-    border: 0;
-    margin: 5px;
+    border: none;
+    margin: 5px 22px 5px 5px;
     width: 260px;
     padding: 10px 0px 10px 0px;
     text-align: center;
