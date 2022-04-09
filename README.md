@@ -98,16 +98,12 @@
 8. Migrate tables/relations to the Database
 
 		1. In cmd.exe, navigate to roly-united/UnityAssetStore/main/
-		2. Edit scraper.py:
-			Scroll to the bottom and make sure the call to "scrape()" is commented out
-				e.g. ' #scrape("test_repo", "email@gmail.com", "password") '
-				NOT  ' scrape("test_repo", "email@gmail.com", "password") '
-		3. In cmd.exe navigate to roly-united/UnityAssetStore
-		4. Migrate the relations in cmd.exe:
+		2. In cmd.exe navigate to roly-united/UnityAssetStore
+		3. Migrate the relations in cmd.exe:
 			$ python manage.py makemigrations
 			$ python manage.py migrate
 		
-		Should output:
+		Expected Output for 1st time running:
 		$ Operations to perform:
 		$ 	Apply all migrations: admin, auth, contenttypes, main, sessions
 		$ Running migrations:
@@ -177,28 +173,29 @@
 		  
 
 ## CREATE A DATABASE DUMP FILE:
-In cmd.exe, navigate to a directory you would like to place the dump file in.
-Run the below command in cmd.exe to generate a database dump file:
+
+	1. In cmd.exe, navigate to a directory you would like to place the dump file in.
+	2. Generate a database dump file using the below command in cmd.exe:
+		$ pg_dump -Fc --no-acl --no-owner -h <HOST> -U <USER> -d <DB_NAME> -f uas_db.dump
 	
-	$ pg_dump -Fc --no-acl --no-owner -h <HOST> -U <USER> -d <DB_NAME> -f uas_db.dump
-	
-	For our app, this is the literal command:
-	$ pg_dump -Fc --no-acl --no-owner -h localhost -U lainey -d uas -f uas_db.dump 
-	$ password: test
+		*** For our app, this is the literal command:
+		$ pg_dump -Fc --no-acl --no-owner -h localhost -U lainey -d uas -f uas_db.dump 
+		$ password: test
     			
 ## IMPORT DUMP FILE INTO HEROKU APP:
-1. Create/Login to your AWS Account.
-2. In the search bar saying "Search for services, features...", search for "S3" and select the result "S3"
-3. Select "Create bucket"
-5. Under "Bucket name" use any name you wish. Use the default selections for the other settings
-6. Upload your dump file (e.g. "uas_db.dump") into the bucket you just created
-7. Select the dump file in the bucket, then select "Actions" > "Share with a presigned URL"
-8. In cmd.exe, navigate to your roly-united directory. Then run the below command:
-	
+
+	1. Create/Login to your AWS Account.
+	2. In the search bar saying "Search for services, features...", search for "S3" and select the result "S3"
+	3. Select "Create bucket"
+	5. Under "Bucket name" use any name you wish. Use the default selections for the other settings
+	6. Upload your dump file (e.g. "uas_db.dump") into the bucket you just created
+	7. Select the dump file in the bucket, then select "Actions" > "Share with a presigned URL"
+	8. In cmd.exe, navigate to your roly-united directory. Then run the below command:
 		$ heroku pg:backups:restore --app <APP_NAME> --confirm <APP_NAME> "<GENERATED_URL>"
 	
-		For our app, this is the literal command:
+		*** For our app, this is the literal command:
 		$ heroku pg:backups:restore --app roly-united --confirm roly-united "<GENERATED_URL>"
 	
 ## ACCESS THE REMOTELY HOSTED APP
-Go to https://roly-united.herokuapp.com/
+
+	Go to https://roly-united.herokuapp.com/
