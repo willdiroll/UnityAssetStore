@@ -132,18 +132,11 @@
 		$	Applying main.0002_alter_asset_assetlink_alter_asset_assetname_and_more... OK
 		$	Applying sessions.0001_initial... OK
 		
-		**You should now be prepared to use the app!
+		*** You should now be prepared to use the app!
 	
 ## POPULATE THE DATABASE WITH THE WEB SCRAPER
-In cmd.exe navigate to roly-united/UnityAssetStore/main/
-	
-	1. Edit scraper.py:
-		- Scroll to the bottom and make sure the call to "scrape()" is NOT commented out
-			e.g. scrape("test_repo", "email@gmail.com", "password")
-			NOT  #scrape("test_repo", "email@gmail.com", "password")
-		  
-		- Replace the information in scrape() with your Unity Asset Store login information
-		  
+
+	1. In cmd.exe navigate to roly-united/UnityAssetStore/  
 	2. Run the scraper from cmd.exe:
 		$ python scraper.py
 		
@@ -170,30 +163,17 @@ In cmd.exe navigate to roly-united/UnityAssetStore/main/
 		$ Finished!
 	
 ## CHECK WHAT POPULATED INTO THE DATABASE (OPTIONAL)
-In cmd.exe, navigate to roly-united/UnityAssetStore
 
-	Create a superuser for the locally-hosted website in cmd.exe:
-	$ python manage.py createsuperuser
-		
-	Now follow the command line prompts to create super user credentials
+	1. In cmd.exe, navigate to roly-united/UnityAssetStore
+	2. Create a superuser for the locally-hosted website in cmd.exe:
+		$ python manage.py createsuperuser
+	3. Follow the command line prompts to create super user credentials
+	4. Run localhost server in cmd.exe:
+		$ python manage.py runserver
+	5. In a browser, go to the localhost URL (by default, http://127.0.0.1:8000/)
+	6. Go to /admin/ page (e.g. http://127.0.0.1:8000/admin/), and login using the credentials you specified before
 	
-In cmd.exe, navigate to roly-united/UnityAssetStore/main
-
-	Comment out scrape() call:
-	In scraper.py, scroll to the bottom and make sure the call to "scrape()" is commented out
-	
-	e.g. #scrape("test_repo", "email@gmail.com", "password")
-	NOT  scrape("test_repo", "email@gmail.com", "password")
-			
-In cmd.exe, navigate to roly-united/UnityAssetStore
-
-	Run localhost server in cmd.exe:
-	$ python manage.py runserver
-		
-In a browser, go to the localhost URL (by default, http://127.0.0.1:8000/)
-	Go to /admin/ page (e.g. http://127.0.0.1:8000/admin/), and login using the credentials you specified before
-	
-From here, you can view all the assets added in "Assets" and delete any you choose. 
+	*** From here, you can view all the assets added in "Assets" and delete any you choose. 
 		  
 
 ## CREATE A DATABASE DUMP FILE:
