@@ -140,7 +140,7 @@ Run the scraper:
 		
 Expected output:
 
-	$ C:\Users\Diego\Desktop\roly-united\UnityAssetStore>python scraper.py
+	C:\Users\Diego\Desktop\roly-united\UnityAssetStore>python scraper.py
 	running scraper.py...
 
 	------------------------------------
@@ -180,7 +180,7 @@ If chose menu option (1):
 	$ added assets:  2
 	$ added assets:  3
 	$ ...
-	$ added assets: <your max number of assets>
+	$ added assets: <# of assets TOTAL>
 	$ Finished!
 	
 If chose menu option (2):
@@ -204,7 +204,7 @@ $ Scraping all assets from your Unity account!
 	$ added assets:  2
 	$ added assets:  3
 	$ ...
-	$ added assets: <number of assets most recently added>
+	$ added assets: <# of assets RECENTLY ADDED>
 	$ Update complete!
 	
 If chose invalid menu option:
