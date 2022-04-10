@@ -255,3 +255,28 @@ If chose invalid menu option:
 ## ACCESS THE REMOTELY HOSTED APP
 
 	Go to https://roly-united.herokuapp.com/
+	
+## UPDATE YOUR APP
+
+There are 2 ways you can update the app:
+
+Method 1: Clone the app from Heroku again (same as SET UP > Step 3.)
+
+	1. Login to Heroku from Heroku CLI on cmd.exe with
+		$ heroku login
+	2. In cmd.exe, navigate to a directory you would like to place the app in, then use
+		$ heroku git:clone -a roly-united
+		
+	NOTE: This creates a new roly-united directory on your machine, so you likely want to delete your old one to avoid confusion!
+
+Method 2: Pull from the remote repo and overwrite local changes
+
+	1. In cmd.exe, navigate to your roly-united directory
+	2. Revert any local changes you may have made using the below cmd:
+		$ git restore .
+	3. Pull changes from the remote master branch:
+		$ git pull
+		
+	NOTE: This does NOT create a new directory.
+
+	
