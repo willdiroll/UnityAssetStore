@@ -132,31 +132,87 @@
 	
 ## POPULATE THE DATABASE WITH THE WEB SCRAPER
 
+Run the scraper:
+
 	1. In cmd.exe navigate to roly-united/UnityAssetStore/  
 	2. Run the scraper from cmd.exe:
 		$ python scraper.py
 		
-	Expected output:
-		$ running scraper.py...
-		$ Start scraping!
-		$
-		$ DevTools listening on ws://127.0.0.1:57675/devtools/browser/429d70e2-6148-4a66-b2fd-2531f0bd11be
-		$ Go to 'https://assetstore.unity.com/account/assets'
-		$ [0401/115845.044:INFO:CONSOLE(21943)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/100.0.4896.60 Safari/537.36", source: https://idportal-cdn-prd.unity.com/assets/application-eed523e87286a88e3339a8c22957ef746aff35569374e12ca5d132cf75ed6aa8.js (21943)
-		$ Log in
-		$ [0401/115847.669:INFO:CONSOLE(1)] "Refused to connect to 'https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location' because it violates the following Content Security Policy directive: "connect-src 'self' tools.conversion.com *.doubleclick.net *.zdassets.com *.zendesk.com *.zopim.com https://*.zopim.com wss://unity3d.zendesk.com wss://*.zopim.com cdn.cookielaw.org privacyportal-eu.onetrust.com *.google-analytics.com *.s3.amazonaws.com *.sleeknote.com *.unity3d.com *.unitychina.cn *.cdp.internal.unity3d.com *.optimizely.com heapanalytics.com *.adroll.com *.hotjar.com ws://*.hotjar.com wss://*.hotjar.com *.resonai.com *.qualtrics.com *.kameleoon.com *.kameleoon.eu *.clarity.ms fonts.googleapis.com".
-		$ ", source: https://cdn.cookielaw.org/scripttemplates/otSDKStub.js (1)
-		$ [0401/115848.650:INFO:CONSOLE(3)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/100.0.4896.60 Safari/537.36", source: https://static.hotjar.com/c/hotjar-1421364.js?sv=7 (3)
-		$ [0401/115848.835:INFO:CONSOLE(137)] "cfQA cookie true", source: kameleoonGlobalScript.js (137)
-		$ Set page size to 50 assets
-		$ [0401/115849.367:INFO:CONSOLE(1)] "console.groupEnd", source: https://sleeknotestaticcontent.sleeknote.com/c/package-core-boot.js (1)
-		$ [0401/115849.418:INFO:CONSOLE(140)] "Service worker registration sw-main.js succeeded: https://assetstore.unity.com/", source: https://assetstore.unity.com/account/assets (140)
-		$ Creating new repo
-		$ added assets:  1
-		$ added assets:  2
-		$ added assets:  3
-		...
-		$ Finished!
+Expected output:
+
+	$ C:\Users\Diego\Desktop\roly-united\UnityAssetStore>python scraper.py
+	running scraper.py...
+
+	------------------------------------
+
+	Provide Unity login info: (leave Email or Password blank to skip)
+	Email: *****@example.com
+	Password: 
+
+	Select scraping mode (enter a number):
+	0. Exit
+	1. All:              scrapes all assets
+	2. Recently Added:   scrapes up until asset that is already saved
+	<user input 0, 1 or 2>
+	
+	------------------------------------
+	
+If chose menu option (0):
+	
+	$ Exiting
+	
+If chose menu option (1):
+	
+	$ Scraping all assets from your Unity account!
+
+	$ DevTools listening on ws://127.0.0.1:61989/devtools/browser/59b5d5ca-4462-4356-8aa8-b6d4fd32cb5d
+	$ Go to 'https://assetstore.unity.com/account/assets'
+	$ [0410/111854.419:INFO:CONSOLE...
+	$ Log in
+	$ [0410/111854.419:INFO:CONSOLE...
+	$ [0410/111854.419:INFO:CONSOLE...
+	$ [0410/111854.419:INFO:CONSOLE...
+	$ Set page size to 100 assets
+	$ [0410/111858.551:INFO:CONSOLE...
+	$ Waiting 5 seconds for assets on the page to load...
+	$ [0410/111858.831:INFO:CONSOLE...
+	$ added assets:  1
+	$ added assets:  2
+	$ added assets:  3
+	$ ...
+	$ added assets: <your max number of assets>
+	$ Finished!
+	
+If chose menu option (2):
+
+$ Scraping all assets from your Unity account!
+
+	$ Scraping your most recently added assets!
+
+	$ DevTools listening on ws://127.0.0.1:61989/devtools/browser/59b5d5ca-4462-4356-8aa8-b6d4fd32cb5d
+	$ Go to 'https://assetstore.unity.com/account/assets'
+	$ [0410/111854.419:INFO:CONSOLE...
+	$ Log in
+	$ [0410/111854.419:INFO:CONSOLE...
+	$ [0410/111854.419:INFO:CONSOLE...
+	$ [0410/111854.419:INFO:CONSOLE...
+	$ Set page size to 100 assets
+	$ [0410/111858.551:INFO:CONSOLE...
+	$ Waiting 5 seconds for assets on the page to load...
+	$ [0410/111858.831:INFO:CONSOLE...
+	$ added assets:  1
+	$ added assets:  2
+	$ added assets:  3
+	$ ...
+	$ added assets: <number of assets most recently added>
+	$ Update complete!
+	
+If chose invalid menu option:
+
+	Please select a valid menu option (enter a number)
+	0. Exit
+	1. All:              scrapes all assets
+	2. Recently Added:   scrapes up until asset that is already saved
 	
 ## CHECK WHAT POPULATED INTO THE DATABASE (OPTIONAL)
 
