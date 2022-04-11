@@ -151,9 +151,10 @@ Expected output:
 
 	Select scraping mode (enter a number):
 	0. Exit
-	1. All:              scrapes all assets
+	1. All:              scrapes all assets (recommended for accounts w/ <200 assets)
 	2. Recently Added:   scrapes up until asset that is already saved
-	<user input 0, 1 or 2>
+	3. Per Page:         scrapes all assets on a certain page (100 assets per page)
+	<user input 0-3>
 	
 	------------------------------------
 	
@@ -167,15 +168,11 @@ If chose menu option (1):
 
 	$ DevTools listening on ws://127.0.0.1:61989/devtools/browser/59b5d5ca-4462-4356-8aa8-b6d4fd32cb5d
 	$ Go to 'https://assetstore.unity.com/account/assets'
-	$ [0410/111854.419:INFO:CONSOLE...
 	$ Log in
-	$ [0410/111854.419:INFO:CONSOLE...
-	$ [0410/111854.419:INFO:CONSOLE...
-	$ [0410/111854.419:INFO:CONSOLE...
 	$ Set page size to 100 assets
-	$ [0410/111858.551:INFO:CONSOLE...
+	$ 
+	$ You have <A> assets across <P> pages.
 	$ Waiting 5 seconds for assets on the page to load...
-	$ [0410/111858.831:INFO:CONSOLE...
 	$ added assets:  1
 	$ added assets:  2
 	$ added assets:  3
@@ -185,27 +182,45 @@ If chose menu option (1):
 	
 If chose menu option (2):
 
-$ Scraping all assets from your Unity account!
-
 	$ Scraping your most recently added assets!
 
 	$ DevTools listening on ws://127.0.0.1:61989/devtools/browser/59b5d5ca-4462-4356-8aa8-b6d4fd32cb5d
 	$ Go to 'https://assetstore.unity.com/account/assets'
-	$ [0410/111854.419:INFO:CONSOLE...
 	$ Log in
-	$ [0410/111854.419:INFO:CONSOLE...
-	$ [0410/111854.419:INFO:CONSOLE...
-	$ [0410/111854.419:INFO:CONSOLE...
 	$ Set page size to 100 assets
-	$ [0410/111858.551:INFO:CONSOLE...
+	$ 
+	$ You have <A> assets across <P> pages.
 	$ Waiting 5 seconds for assets on the page to load...
-	$ [0410/111858.831:INFO:CONSOLE...
 	$ added assets:  1
 	$ added assets:  2
 	$ added assets:  3
 	$ ...
 	$ added assets: <# of assets RECENTLY ADDED>
 	$ Update complete!
+	
+If chose menu option (3):
+
+	$ Scraping all assets from a certain page!
+	$
+	$ DevTools listening on ws://127.0.0.1:57361/devtools/browser/d78adc6c-b477-47cc-b7f6-df5aefc441c9
+	$ Go to 'https://assetstore.unity.com/account/assets'
+	$ Log in
+	$ Set page size to 100 assets
+	$
+	$ You have <A> assets across <P> pages.
+	$
+	$ ------------------------------------
+	$ 
+	$ Please enter a valid page number from 1 to <P>
+	$ Enter the page # you would like to scrape: <user input>
+	$ Reaching page 2
+	$ Waiting 5 seconds for assets on the page to load...
+	$ added assets:  1
+	$ added assets:  2
+	$ added assets:  3
+	$ ...
+	$ added assets:  <# of assets on the page>
+	$ Finished!
 	
 If chose invalid menu option:
 
