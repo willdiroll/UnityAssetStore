@@ -157,6 +157,11 @@ Expected output:
 	<user input 0-3>
 	
 	------------------------------------
+
+	Do you want to scrape only 'Paid' assets? (y/n) <user input y/n>
+	(Note: all assets will be scraped if you have no assets labeled 'Paid')
+
+	------------------------------------
 	
 If chose menu option (0):
 	
@@ -164,7 +169,7 @@ If chose menu option (0):
 	
 If chose menu option (1):
 	
-	$ Scraping all assets from your Unity account!
+	$ Scraping all (Paid) assets from your Unity account!
 
 	$ DevTools listening on ws://127.0.0.1:61989/devtools/browser/59b5d5ca-4462-4356-8aa8-b6d4fd32cb5d
 	$ Go to 'https://assetstore.unity.com/account/assets'
@@ -182,7 +187,7 @@ If chose menu option (1):
 	
 If chose menu option (2):
 
-	$ Scraping your most recently added assets!
+	$ Scraping your most recently added (Paid) assets!
 
 	$ DevTools listening on ws://127.0.0.1:61989/devtools/browser/59b5d5ca-4462-4356-8aa8-b6d4fd32cb5d
 	$ Go to 'https://assetstore.unity.com/account/assets'
@@ -200,7 +205,7 @@ If chose menu option (2):
 	
 If chose menu option (3):
 
-	$ Scraping all assets from a certain page!
+	$ Scraping all (Paid) assets from a certain page!
 	$
 	$ DevTools listening on ws://127.0.0.1:57361/devtools/browser/d78adc6c-b477-47cc-b7f6-df5aefc441c9
 	$ Go to 'https://assetstore.unity.com/account/assets'
