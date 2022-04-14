@@ -262,11 +262,11 @@ If chose invalid menu option:
 
 	1. Create/Login to your AWS Account.
 	2. In the search bar saying "Search for services, features...", search for "S3" and select the result "S3"
-	3. Select "Create bucket"
-	5. Under "Bucket name" use any name you wish. Use the default selections for the other settings
-	6. Upload your dump file (e.g. "uas_db.dump") into the bucket you just created
-	7. Select the dump file in the bucket, then select "Actions" > "Share with a presigned URL"
-	8. In cmd.exe, navigate to your roly-united directory. Then run the below command:
+	3. (Skip if already created a bucket) Select "Create bucket"
+	4. (Skip if already created a bucket) Under "Bucket name" use any name you wish. Use the default selections for the other settings
+	5. Upload your dump file (e.g. "uas_db.dump") into a bucket
+	6. Select the checkbox next to the dump file in the bucket, then select "Actions" > "Share with a presigned URL"
+	7. In cmd.exe, navigate to your roly-united directory. Then run the below command:
 		$ heroku pg:backups:restore --app <APP_NAME> --confirm <APP_NAME> "<GENERATED_URL>"
 	
 		*** For our app, this is the literal command:
