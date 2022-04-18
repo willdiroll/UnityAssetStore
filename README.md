@@ -276,6 +276,14 @@ If chose invalid menu option:
 
 	Go to https://roly-united.herokuapp.com/
 	
+	Features on the app include:
+	- Sorting (by Asset Name or by Date Last Updated)
+	- Filtering (via a set of Categories and Labels)
+		- The filtering action is characterized by the following:
+			{ c1 OR c2 OR ... OR cN } AND { l1 AND l2 AND ... AND lN } or
+			{ c1 OR c2 OR ... OR cN } AND { l1 OR l2 OR ... OR lN }
+	- Asset Pagination
+	
 ## UPDATE YOUR APP
 
 There are 2 ways you can update the app:
