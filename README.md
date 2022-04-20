@@ -307,4 +307,22 @@ Method 2: Pull from the remote repo and overwrite local changes
 		
 	NOTE: This does NOT create a new directory.
 
+## SHARING THE APP WITH FUTURE DEVELOPERS
+
+	1. Login to your Heroku account on https://id.heroku.com/login
+	2. Select the app to enter its Dashboard
+	3. Go to the 'Access' Tab
+	4. Click on 'Add collaborator' and enter the email associated with your developer's Heroku account
 	
+	** The Heroku users added as Collaborators can now access the codebase via a git clone (see SET UP steps 2, 3)
+	
+## FUTURE CONSIDERATIONS/IMPROVEMENTS
+
+	- On the web app, split the 'Categories' and 'Labels' lists into different scrollboxes.
+	- Expand upon 'Repo' functionality
+		- Allow users to create their own Asset pages which they can share via access codes
+	- Create a more user-friendly interface for updating assets (web scraping). E.g:
+		- Progress bar
+		- Graphical UI
+		- Windows Batch Files (for executing scraper and other command-line actions)
+	- Make web scraper more consistent
